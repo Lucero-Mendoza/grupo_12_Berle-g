@@ -1,4 +1,4 @@
-Temas a tocar:
+Temas para abarcar:
 
 ● Una breve descripción de la oferta de productos y/o servicios ofrecidos por su sitio. También agregar una breve descripción del público al que apunta el sitio.
 
@@ -19,7 +19,7 @@ Para los más grandes, se ofrecerá un catálogo de ropa con las tendencias actu
 
 
 
-Para esto, el equipo de programadores de Digital House, se encargará de diseñar la página web, por lo que, en las siguientes líneas se hace una pequeña descripción del equipo, así como también, se ponen a disposición sus datos:
+Para esto, el equipo de programadores de Digital House se encargará de diseñar la página web, por lo que, en las siguientes líneas se hace una pequeña descripción del equipo, así como también, se ponen a disposición sus datos:
 
 1. Bermúdez Chavira Miguel Ángel
 
@@ -40,7 +40,29 @@ Para esto, el equipo de programadores de Digital House, se encargará de diseña
 3. León de Paz Horacio Humberto
 
     Licenciado en Sistemas Computacionales y Técnico en Informática
-    Estudiante de Ingenieria en Desarrollo de Software
+    Estudiante de Ingeniería en Desarrollo de Software
     26 años
     hhlp.epo@gmail.com
     9613029347
+
+Fuentes de consulta:
+
+1. HyM
+
+    URL: https://www2.hm.com/es_mx/index.html
+
+2. Supreme
+
+    URL: https://www.streetwearofficial.com/collections/supreme
+
+3. Gucci
+
+    URL: https://www.gucci.com/es/es/
+
+4. Shasa
+    
+    URL: https://www.shasa.com/ 
+
+5. Sweet n Dandy
+
+    URL: https://www.sweetndandymadrid.com/
