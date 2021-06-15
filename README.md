@@ -7,6 +7,8 @@ Temas para abarcar:
     ¿Cómo ajustaremos nuestra oferta a ese público?
 
 ● Una breve descripción de los integrantes del equipo.
+
+● URL del repositorio y de Trello.
 _______________________________________________________________________________________________________________
 
 Berli g
@@ -66,3 +68,19 @@ Fuentes de consulta:
 5. Sweet n Dandy
 
     URL: https://www.sweetndandymadrid.com/
+
+
+
+El equipo de programadores de Digital House, se está apoyando de dos herramientas indispensables para una buena organización:
+
+1. Trello
+
+En la plataforma de Trello, se han creado diversas tareas que se esperan cumplir en un tiempo establecido para, de esta forma, tener el trabajo listo en la fecha acordada con el cliente.
+
+URL: https://trello.com/invite/b/0xl0KCXd/d2b7a8572ef18c5ed38e18d2fb754ed3/berli-g-grupo-12
+
+2. GitHub
+
+Es una plataforma que ha ayudado al equipo a trabajar con orden, hacer revisiones y correciones en el trabajo de cada integrante, así como guardar un historial de cambios realizados por cada uno de los integrantes.
+
+URL: https://github.com/Lucero-Mendoza/grupo_12_Berli-g
