@@ -71,7 +71,7 @@ Fuentes de consulta:
 
 
 
-El equipo de programadores de Digital House, se está apoyando de dos herramientas indispensables para una buena organización:
+El equipo de programadores de Digital House se está apoyando de dos herramientas indispensables para una buena organización:
 
 1. Trello
 
@@ -81,6 +81,6 @@ URL: https://trello.com/invite/b/0xl0KCXd/d2b7a8572ef18c5ed38e18d2fb754ed3/berli
 
 2. GitHub
 
-Es una plataforma que ha ayudado al equipo a trabajar con orden, hacer revisiones y correciones en el trabajo de cada integrante, así como guardar un historial de cambios realizados por cada uno de los integrantes.
+Es una plataforma que ha ayudado al equipo a trabajar con orden, hacer revisiones y correcciones en el trabajo de cada integrante, así como guardar un historial de cambios realizados por cada uno de los integrantes.
 
 URL: https://github.com/Lucero-Mendoza/grupo_12_Berli-g
