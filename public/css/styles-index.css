@@ -1,0 +1,129 @@
+:root {
+    --Color1:#ffffff;
+    --Color2:#e9ae97;
+    --Color3:#000102;
+    --Color4:rgb(201, 67, 67);
+    --Color5:#621970;
+    --Color6:#323532;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Bree Serif', serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: var(--Color3);
+    font-size: 100%;
+    text-decoration: none;
+}
+.barra-de-busqueda {
+    position: relative;
+    width: 22vw;
+}
+
+.barra-de-busqueda input {
+    border: solid 1px var(--Color4);
+    border-radius: 10px;
+    font-size: 11px;
+    margin-top: 17px;
+    padding: 3px;
+    width: 100%;
+}
+
+.barra-de-navegacion {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 120px;
+}
+.barra-de-opciones {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 17px;
+    width: 28vw;
+}
+.barra-de-opciones-iconos{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 17px;
+    width: 13vw;
+}
+
+.fa-heart::before {
+    color: var(--Color3);
+}
+
+.fa-search::before {
+    background-color: var(--Color1);
+    border-radius: 15px;
+    padding-right: 5px;
+    position: absolute;
+    right: 3px;
+    top: 20px;
+}
+
+.fa-shopping-bag::before {
+    color: var(--Color3);
+}
+
+.fa-user::before {
+    color: var(--Color3);
+}
+
+#fondo-header {
+    background-image: url("/img/logo-Berle-G.jpg");
+    background-size: 100vw;
+}
+
+.formulario1 {
+    padding-top: 17px;
+    width: 7vw;
+}
+
+.formulario1 select {
+    width: 100%;
+}
+
+.ir-a-ofertas {
+    background-color: var(--Color3);
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+.ir-a-ofertas a {
+    color: var(--Color2);
+    font-size: 50px;
+    font-weight: bold;
+}
+li {
+    list-style-type: none;
+}
+.nombre-Berle-G {
+    font-size: 45px;
+    text-align: center;
+    width: 30vw;
+}
+.secciones-por-edades {
+    background-color: #e9ae9790;
+    display: flex;
+    justify-content: center;
+}
+.secciones-por-edades img {
+    border-radius: 50%;
+    width:8vw;
+}
+
+.secciones-por-edades a {
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}

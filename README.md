@@ -11,7 +11,7 @@ Temas para abarcar:
 ● URL del repositorio y de Trello.
 _______________________________________________________________________________________________________________
 
-Berli g
+Berle G
 
 Berli g es un e-commerce creado para DH Venture Capitals con el objetivo de vender de forma eléctronica ropa a cualquier persona que la desee. Sin embargo, se enfoca en atender las necesidades de personas de 0 a 40 años. 
 
