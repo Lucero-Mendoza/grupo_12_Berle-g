@@ -1,3 +1,4 @@
+/*-----------------------PALETA DE COLORES-----------------------*/
 :root {
     --Color1:#ffffff;
     --Color2:#e9ae97;
@@ -7,6 +8,7 @@
     --Color6:#323532;
 }
 
+/*-------------------------ESTILOS FIJOS-------------------------*/
 * {
     box-sizing: border-box;
     font-family: 'Bree Serif', serif;
@@ -14,16 +16,17 @@
     padding: 0px;
 }
 
+/*-------------------------ESTILOS HEADER-------------------------*/
 a {
     color: var(--Color3);
     font-size: 100%;
     text-decoration: none;
 }
 .barra-de-busqueda {
+    height: 7vw;
     position: relative;
     width: 22vw;
 }
-
 .barra-de-busqueda input {
     border: solid 1px var(--Color4);
     border-radius: 10px;
@@ -32,29 +35,54 @@ a {
     padding: 3px;
     width: 100%;
 }
-
 .barra-de-navegacion {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 120px;
+    margin-bottom: 50px;
+}
+.barra-de-navegacion:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.barra-de-navegacion:hover .barra-de-opciones a{
+    color: var(--Color1);
+    font-weight: 100;
+}
+.barra-de-navegacion:hover .item-menu i {
+    color: var(--Color1);
+}
+.barra-de-navegacion:hover .nombre-Berle-G{
+    color: var(--Color1);
+}
+.barra-de-navegacion:hover .fa-heart::before{
+    color: var(--Color1);
+}
+.barra-de-navegacion:hover .fa-shopping-bag::before{
+    color: var(--Color1);
+}
+.barra-de-navegacion:hover .fa-user::before{
+    color: var(--Color1);
 }
 .barra-de-opciones {
     display: flex;
+    height: 7vw;
     justify-content: space-around;
     padding-top: 17px;
     width: 28vw;
 }
+.barra-de-opciones li {
+    font-size: 1.2vw;
+    width: 100%;
+}
 .barra-de-opciones-iconos{
     display: flex;
+    height: 7vw;
     justify-content: space-around;
     padding-top: 17px;
     width: 13vw;
 }
-
 .fa-heart::before {
     color: var(--Color3);
 }
-
 .fa-search::before {
     background-color: var(--Color1);
     border-radius: 15px;
@@ -63,39 +91,23 @@ a {
     right: 3px;
     top: 20px;
 }
-
 .fa-shopping-bag::before {
     color: var(--Color3);
 }
-
 .fa-user::before {
     color: var(--Color3);
 }
-
 #fondo-header {
     background-image: url("/img/logo-Berle-G.jpg");
     background-size: 100vw;
 }
-
-.formulario1 {
-    padding-top: 17px;
-    width: 7vw;
-}
-
-.formulario1 select {
-    width: 100%;
-}
-
 .ir-a-ofertas {
     background-color: var(--Color3);
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 30px;
     padding-bottom: 20px;
     padding-top: 20px;
     text-align: center;
 }
-.ir-a-ofertas a {
+.ir-a-ofertas {
     color: var(--Color2);
     font-size: 50px;
     font-weight: bold;
@@ -104,26 +116,85 @@ li {
     list-style-type: none;
 }
 .nombre-Berle-G {
+    color: var(--Color3);
     font-size: 45px;
+    height: 7vw;
     text-align: center;
     width: 30vw;
+}
+.ofertas {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 30px;
 }
 .secciones-por-edades {
     background-color: #e9ae9790;
     display: flex;
     justify-content: center;
 }
+.secciones-por-edades i {
+    font-size: 2vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 5%;
+}
 .secciones-por-edades img {
     border-radius: 50%;
     width:8vw;
 }
-
 .secciones-por-edades a {
     align-items: center;
     display:flex;
     flex-direction: column;
-    margin-left: 12px;
-    margin-right: 12px;
+    font-size: 1.2vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
     padding-top: 12px;
     padding-bottom: 12px;
+    text-align: center;
+    width: 9.5vw;
 }
+
+/*Menú despegable de Header*/
+
+.item-menu {
+    display: block;
+    font-size: 25px;
+    padding-top: 10px;
+    position: relative;
+}
+
+.opciones-despegables {
+    background-color: var(--Color1);
+    border: 2px solid var(--Color4);
+    border-radius: 15px;
+    font-size: 1.2vw;
+    position: absolute;
+    width: 15vw;
+    display: none;
+}
+
+.android, .ios {
+    padding: 2% 4%;
+}
+
+.android:hover {
+    background-color: var(--Color2);
+    border-radius: 15px;
+}
+
+.ios:hover {
+    background-color: var(--Color2);
+    border-radius: 15px;
+}
+
+.item-menu:hover .opciones-despegables {
+    display: block;
+}
+
+.item-menu:hover i {
+    border-radius: 50%;
+    background-color: var(--Color4);
+    padding: 5px;
+}
+

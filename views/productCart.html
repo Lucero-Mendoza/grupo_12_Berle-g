@@ -25,16 +25,22 @@
 
         <ul class="barra-de-opciones">
             <li><a href="/customer-service">Atención al cliente</a></li>
-            <li><a href="/store-locator"   >Encuentra tu tienda</a></li>
+            <li><a href="/store-locator">Encuentra tu tienda</a></li>
         </ul>
 
-        <form action="value" class="formulario1" method="GET" name="formulario1">
-            <select name="despegable1" onchange="location.replace(document.formulario1.despegable1.value)">
-                <option value="Seleccione una opción"           >--Seleccione          </option>
-                <option value="https://play.google.com/store"   >Descargar para Android</option>
-                <option value="https://www.apple.com/app-store/">Descargar para iOS    </option>
-            </select>
-        </form>
+        <!--Menú despegable-->
+        <div class="menu-despegable">
+            <ul>
+                <li class="item-menu"><a href="#"><i class="fas fa-ellipsis-h"></i></a>
+
+                    <ul class="opciones-despegables">
+                        <li><a href="https://play.google.com/store"><div class="android">Descargar para Android</div></a></li>
+                        <li><a href="https://www.apple.com/app-store/"><div class="ios">Descargar para iOS</div></a></li>
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
 
         <div class="nombre-Berle-G">Berle G</div>
 
@@ -52,13 +58,16 @@
     </div>
 
     <div class="secciones-por-edades">
-        <li><a href="/the-most-wanted"><img src="/img/seccion-lo-mas-buscado.jpg">Lo más buscado</a></li>
+        <i class="fas fa-chevron-left"></i>
+        <li><a href="/the-most-wanted"><img src="/img/seccion-lo-mas-buscado.png">Lo más buscado</a></li>
         <li><a href="/children/boy"><img src="/img/seccion-niño.jpg">Niño</a></li>
         <li><a href="/men"><img src="/img/seccion-hombre.jpg">Hombre</a></li>
-        <li><a href="/novelties"><img src="/img/seccion-novedades.jpg">Novedades</a></li>
+        <li><a href="/novelties"><img src="/img/seccion-novedades.png">Novedades</a></li>
         <li><a href="/women"><img src="/img/seccion-mujer.jpg">Mujer</a></li>
         <li><a href="/children/girl"><img src="/img/seccion-niña.jpg">Niña</a></li>
+        <li><a href="/best-sellers"><img src="/img/seccion-los-mas-vendidos.png">Los más vendidos</a></li>
         <li><a href="/babys"><img src="/img/seccion-bebés.jpg">Bebés</a></li>
+        <i class="fas fa-chevron-right"></i>
     </div>
 
     <div>&nbsp</div>
@@ -74,4 +83,5 @@
     </footer>
 
 </body>
+
 </html>
