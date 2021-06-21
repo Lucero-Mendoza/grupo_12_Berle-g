@@ -109,7 +109,7 @@ a {
 }
 .ir-a-ofertas {
     color: var(--Color2);
-    font-size: 50px;
+    font-size: 3vw;
     font-weight: bold;
 }
 li {
@@ -241,4 +241,67 @@ footer section li {
     text-align: center;
 }
 
-/*-------------------------ESTILOS CATÁLOGOS-------------------------*/
+/*----------------------------ESTILOS MAIN----------------------------*/
+
+/*Estilos de los catálogos*/
+
+.catalogos-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+    position: relative;
+}
+
+.catalogo-primavera-verano-mujeres {
+    width: 40%;
+}
+.catalogo-primavera-verano-mujeres img {
+    height: 35vw;
+    width: 100%;
+}
+.catalogo-primavera-verano-mujeres .nombre-catalogo {
+    color: black;
+    font-weight: bold;
+    font-size: 2.5vw;
+    position: absolute;
+    left: 8vw;
+    top: 15vw;
+}
+.catalogo-primavera-verano-hombres {
+    width: 40%;
+}
+.catalogo-primavera-verano-hombres img {
+    height: 35vw;
+    width: 100%;
+}
+.catalogo-primavera-verano-hombres .nombre-catalogo {
+    color: black;
+    font-weight: bold;
+    font-size: 2.5vw;
+    position: absolute;
+    right: 8.5vw;
+    top: 15vw;
+}
+
+/*Estilos de las secciones importantes (debajo del catálogo)*/
+
+.secciones-importantes-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.seccion-importante a div {
+    font-size: 3vw;
+    font-weight: bold;
+    padding-bottom: 4%;
+    padding-top: 4%;
+}
+.seccion-importante {
+    background-color: var(--Color5);
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+    text-align: center;
+    width: 40vw;
+}
