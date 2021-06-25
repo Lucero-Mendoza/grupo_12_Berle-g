@@ -11,6 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/css/styles-index.css">
+        <link rel="stylesheet" href="/css/styles-login.css">
 </head>
 
 <body>
@@ -72,10 +73,41 @@
 
     <main>
 
+        <form action="/your-account" method="">
+
+            <h3>MI CUENTA BERLI G</h3>
+    
+            <div class="usuario">
+                <label>Usuario:</label>
+                <input type="text" name="Usuario" required>
+            </div>
+    
+            <div class="contraseñas">
+                <div class="contraseña">
+                <label>Contraseña:</label>
+                <input type="password" name="Contraseña" required maxlength="8">
+                </div>
+            </div>
+    
+            <div class="restablecer-contraseña"><a href="/new-password">Olvidé mi contraseña</a></div>
+
+            <div class="botón-enviar-borrar">
+                <button type="submit" class="enviar">INGRESAR</button>
+            </div>
+
+            <div class="enlace-para-registro">
+                <div>¿No tienes cuenta?</div>
+                <a href="/access/register">Regístrate</a>
+            </div>
+    
+        </form>
+
     </main>
 
+    <div>&nbsp</div>
+    
     <footer>
-        
+
         <section class="colecciones">
             <div class="nombre-seccion">COLECCIONES</div>
             <ul>

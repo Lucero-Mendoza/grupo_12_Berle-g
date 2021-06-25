@@ -5,7 +5,7 @@
     --Color3:#000102;
     --Color4:rgb(201, 67, 67);
     --Color5:#621970;
-    --Color6:#323532;
+    --Color6:#a1a7a1;
 }
 
 /*-------------------------ESTILOS FIJOS-------------------------*/
@@ -19,11 +19,11 @@
 /*-------------------------ESTILOS HEADER-------------------------*/
 a {
     color: var(--Color3);
-    font-size: 100%;
+    font-size: 130%;
     text-decoration: none;
 }
 .barra-de-busqueda {
-    height: 7vw;
+    /*height: 7vw;*/
     position: relative;
     width: 22vw;
 }
@@ -64,7 +64,7 @@ a {
 }
 .barra-de-opciones {
     display: flex;
-    height: 7vw;
+    /*height: 7vw;*/
     justify-content: space-around;
     padding-top: 17px;
     width: 28vw;
@@ -75,7 +75,7 @@ a {
 }
 .barra-de-opciones-iconos{
     display: flex;
-    height: 7vw;
+    /*height: 7vw;*/
     justify-content: space-around;
     padding-top: 17px;
     width: 13vw;
@@ -117,8 +117,8 @@ li {
 }
 .nombre-Berle-G {
     color: var(--Color3);
-    font-size: 45px;
-    height: 7vw;
+    font-size: 280%;
+    /*height: 7vw;*/
     text-align: center;
     width: 30vw;
 }
@@ -170,8 +170,8 @@ li {
 }
 .item-menu {
     display: block;
-    font-size: 25px;
-    padding-top: 10px;
+    font-size: 20px;
+    padding-top: 1vw;
     position: relative;
 }
 .item-menu:hover i {
