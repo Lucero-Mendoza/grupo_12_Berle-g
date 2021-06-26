@@ -1,0 +1,238 @@
+/*-----------------------PALETA DE COLORES-----------------------*/
+:root {
+    --Color1:#ffffff;
+    --Color2:#e9ae97;
+    --Color3:#000102;
+    --Color4:rgb(201, 67, 67);
+    --Color5:#621970;
+    --Color6:#a1a7a1;
+    --Color7:#f3d6ec;
+    --Color8:#97443e;
+    --Color9:#414040;
+}
+
+/*-------------------------ESTILOS FIJOS-------------------------*/
+
+* {
+    box-sizing: border-box;
+    font-family: 'Bree Serif', serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*--------------------MODIFICACIONES A HEADER--------------------*/
+
+.barra-de-navegacion {
+   background-image: url("https://wi.wallpapertip.com/wsimgs/56-565219_carmine.jpg");
+   margin-bottom: 0;
+}
+
+.barra-de-navegacion:hover {
+   background-image: url("https://images.alphacoders.com/871/thumb-1920-87123.jpg");
+}
+
+#fondo-header {
+   background-image: none;
+}
+
+.secciones-por-edades {
+   display: none;
+}
+
+/*-------------------------ESTILOS REGISTER-------------------------*/
+
+.apellido-materno, .apellido-paterno, .contraseña, .correo-electrónico, .fecha-nacimiento, .nombre {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.aprobación-terminos-condiciones {
+   font-size: 10px;
+   margin-bottom: 4%;
+   margin-top: 4%;
+}
+
+.aprobación-terminos-condiciones a {
+   font-size: 10px;
+   text-decoration: underline;
+}
+
+.as-no-visible {
+   opacity: 0;
+}
+
+.botón-crear-cuenta {
+   text-align: center;
+}
+
+.nombre-y-apellido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.crear-cuenta {
+   background-color: var(--Color4);
+   border: 2px solid var(--Color4);
+   border-radius: 10px;
+   color: var(--Color3);
+   font-weight: bold;
+   margin-bottom: 3%;
+   margin-top: 3%;
+   padding: 1% 3%;
+   width: 80%;
+}
+
+.crear-cuenta:hover {
+    background-color: var(--Color8);
+    border: 2px solid var(--Color8);
+}
+
+.datos-personales, .informacion-de-ingreso input {
+   width: 100%;
+}
+
+.ingresar-correo {
+   text-align: center;
+}
+
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    left: 4%;
+}
+
+.ingresar-google {
+    border: 2px solid var(--Color6);
+    position: relative;
+}
+
+.ingresar-google div {
+    align-items: center;
+    color: var(--Color9);
+    display: flex;
+    font-size: 13px;
+    justify-content: center;
+    padding: 1%;
+}
+
+main {
+    color: var(--Color9);
+    display: flex;
+    justify-content: center;
+}
+
+main form {
+   box-shadow: 0px 0px 10px var(--Color4);
+   padding: 15px;
+}
+
+main form div {
+   margin-bottom: 6px;
+   margin-top: 6px;
+}
+
+main form h3 {
+   color: var(--Color3);
+   margin-bottom: 22px;
+   margin-top: 15px;
+   text-align: center;
+}
+
+main input {
+   border: solid 1px var(--Color3);
+   padding: 5px;
+}
+
+main form input:hover {
+   background-color: var(--Color7);
+}
+
+main label {
+   font-size: 13px;
+   text-align: left;
+}
+
+main .nombre-seccion {
+    border-bottom: 0.5px solid var(--Color5);
+    font-size: 14px;
+    margin-bottom: 4%;
+    margin-top: 4%;
+    text-align: left;
+}
+
+span {
+   color: red;
+}
+
+/*----------------------CONFIGURACIÓN PARA CELULAR----------------------*/
+
+@media (min-width: 280px) {
+
+   header {
+      height: auto;
+   }
+   main form {
+      width: 350px;
+   }
+   main form h3 {
+      font-size: 15px;
+   }
+   .domicilio input {
+      width: 48%;
+      margin-bottom: 2%;
+   }
+}
+
+/*----------------------CONFIGURACIÓN PARA TABLET----------------------*/
+@media (min-width: 480px) {
+
+   .domicilio {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      width: 100%;
+   }
+  
+   .domicilio div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
+  
+   .domicilio input {
+      width: 48%;
+      margin-bottom: 2%;
+   }
+   .contraseñas, .nombre-y-apellido {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   }
+   .ingresar-google div {
+      font-size: 16px;
+   }
+   main form {
+      width: 400px;
+   }
+   main form h3 {
+      font-size: 20px;
+   }
+}
+/*----------------------CONFIGURACIÓN PARA DESKOP----------------------*/
+
+@media (min-width: 769px) {
+
+   header:hover .secciones-por-edades {
+      display: inline-flex;
+   }
+   main form {
+      width: 500px;
+   }
+   
+}

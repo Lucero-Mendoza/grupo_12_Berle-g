@@ -19,11 +19,9 @@
 /*-------------------------ESTILOS HEADER-------------------------*/
 a {
     color: var(--Color3);
-    font-size: 130%;
     text-decoration: none;
 }
 .barra-de-busqueda {
-    /*height: 7vw;*/
     position: relative;
     width: 22vw;
 }
@@ -43,13 +41,6 @@ a {
 .barra-de-navegacion:hover {
     background-color: rgba(0, 0, 0, 0.9);
 }
-.barra-de-navegacion:hover .barra-de-opciones a{
-    color: var(--Color1);
-    font-weight: 100;
-}
-.barra-de-navegacion:hover .item-menu i {
-    color: var(--Color1);
-}
 .barra-de-navegacion:hover .nombre-Berle-G{
     color: var(--Color1);
 }
@@ -62,20 +53,8 @@ a {
 .barra-de-navegacion:hover .fa-user::before{
     color: var(--Color1);
 }
-.barra-de-opciones {
-    display: flex;
-    /*height: 7vw;*/
-    justify-content: space-around;
-    padding-top: 17px;
-    width: 28vw;
-}
-.barra-de-opciones li {
-    font-size: 1.2vw;
-    width: 100%;
-}
 .barra-de-opciones-iconos{
     display: flex;
-    /*height: 7vw;*/
     justify-content: space-around;
     padding-top: 17px;
     width: 13vw;
@@ -89,7 +68,6 @@ a {
     padding-right: 5px;
     position: absolute;
     right: 3px;
-    top: 20px;
 }
 .fa-shopping-bag::before {
     color: var(--Color3);
@@ -101,207 +79,432 @@ a {
     background-image: url("/img/logo-Berle-G.jpg");
     background-size: 100vw;
 }
-.ir-a-ofertas {
-    background-color: var(--Color3);
-    padding-bottom: 20px;
-    padding-top: 20px;
-    text-align: center;
-}
-.ir-a-ofertas {
-    color: var(--Color2);
-    font-size: 3vw;
-    font-weight: bold;
-}
 li {
     list-style-type: none;
 }
 .nombre-Berle-G {
     color: var(--Color3);
     font-size: 280%;
-    /*height: 7vw;*/
     text-align: center;
     width: 30vw;
 }
-.ofertas {
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 30px;
-}
-.secciones-por-edades {
-    background-color: #e9ae9790;
-    display: flex;
-    justify-content: center;
-}
-.secciones-por-edades i {
-    font-size: 2vw;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    margin-top: 5%;
-}
-.secciones-por-edades img {
-    border-radius: 50%;
-    width:8vw;
-}
-.secciones-por-edades a {
-    align-items: center;
-    display:flex;
-    flex-direction: column;
-    font-size: 1.2vw;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: center;
-    width: 9.5vw;
+
+
+/*----------------------CONFIGURACIÓN PARA CELULAR----------------------*/
+
+@media (min-width: 280px) {
+
+    .barra-de-busqueda {
+        width: 27vw;
+    }
+    .barra-de-busqueda input {
+        margin-top: 8px;
+        padding: 1.5px;
+    }
+    .barra-de-navegacion {
+        margin-bottom: 0;
+    }
+    .barra-de-navegacion:hover .menu-celular-tablet{
+        color: var(--Color1);
+    }
+    .barra-de-opciones-celular-tablet {
+        background-color: var(--Color4);
+        font-size: 10px;
+        top: 33px;
+        left: 0;
+        position: absolute;
+        width: 40vw;
+    }
+    .barra-de-opciones-celular-tablet li {
+        padding: 5%;
+    }
+    .barra-de-opciones-iconos {
+        padding-top: 7px;
+        width: 28vw;
+    }
+    .catalogos-main {
+        position: static;
+    }
+    .catalogo-primavera-verano-hombres .nombre-catalogo {
+        position: static;
+    }
+    .catalogo-primavera-verano-mujeres .nombre-catalogo {
+        position: static;
+    }
+    .celular-tablet {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+    .deskop {
+        display: none;
+    }
+    .barra-de-opciones-celular-tablet {
+        display: none;
+        width: 150px;
+    }
+    .barra-de-opciones-celular-tablet li {
+        font-size: 12px;
+    }
+    .celular-tablet:hover .barra-de-opciones-celular-tablet {
+        display: block;
+    }
+    .fa-search::before {
+        top: 10px;
+    }
+    header {
+        height: 100px;
+    }
+    .menu-celular-tablet {
+        align-items: center;
+        display: flex;
+        font-size: 16px;
+    }
+    .nombre-Berle-G {
+        font-size: 150%;
+    }
+    .nombre-seccion, .nombre-seccion-tablet-celular {
+        font-size: 16px;
+        font-weight: bold;
+        padding-bottom: 5px;
+    }
+    .ofertas {
+        display: none;
+    }
+    .secciones-por-edades {
+        display: none;
+    }
+
+    /*Catálogos*/
+
+    main {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .catalogo-primavera-verano-mujeres, .catalogo-primavera-verano-hombres {
+        padding-bottom: 15%;
+    }
+    .catalogo-primavera-verano-mujeres img, .catalogo-primavera-verano-hombres img {
+        width: 100%;
+    }
+    .catalogo-primavera-verano-mujeres .nombre-catalogo,
+    .catalogo-primavera-verano-hombres .nombre-catalogo {
+        font-weight: bold;
+        font-size: 4vw;
+    }
+
+    /*Secciones importantes*/
+
+    .seccion-importante a div {
+        font-size: 5vw;
+        font-weight: bold;
+        padding-bottom: 4%;
+        padding-top: 4%;
+    }
+    .seccion-importante {
+        background-color: var(--Color5);
+        margin-bottom: 5vw;
+        margin-top: 5vw;
+        text-align: center;
+        width: 100%;
+    }
+
+    /*Footer*/
+
+    .colecciones, .registro {
+        display: none;
+    }
+    footer {
+        background-color: var(--Color2);
+        padding: 5%;
+        text-align: center;
+    }
+    footer section {
+        margin-bottom: 5%;
+    }
+    footer ul {
+        font-size: 12px;
+    }
+    .iconos-redes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .siguenos-deskop {
+        display: none;
+    }
 }
 
-/*Menú despegable de Header*/
+/*----------------------CONFIGURACIÓN PARA TABLET----------------------*/
 
-.android, .ios {
-    padding: 2% 4%;
-}
-.android:hover {
-    background-color: var(--Color2);
-    border-radius: 15px;
-}
-.ios:hover {
-    background-color: var(--Color2);
-    border-radius: 15px;
-}
-.item-menu {
-    display: block;
-    font-size: 20px;
-    padding-top: 1vw;
-    position: relative;
-}
-.item-menu:hover i {
-    border-radius: 50%;
-    background-color: var(--Color4);
-    padding: 5px;
-}
-.item-menu:hover .opciones-despegables {
-    display: block;
-}
-.opciones-despegables {
-    background-color: var(--Color1);
-    border: 2px solid var(--Color4);
-    border-radius: 15px;
-    font-size: 1.2vw;
-    position: absolute;
-    width: 15vw;
-    display: none;
-}
+@media (min-width: 480px) {
+    
+    header {
+        height: auto;
+    }
+    .ir-a-ofertas {
+        background-color: var(--Color3);
+        color: var(--Color2);
+        font-size: 3vw;
+        font-weight: bold;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        text-align: center;
+    }
+    main {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .nombre-Berle-G {
+        text-align: left;
+    }
+    .ofertas {
+        display: block;
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-top: 30px;
+    }
 
-/*-------------------------ESTILOS FOOTER-------------------------*/
+    /*Catálogos*/
 
-footer {
-    display: flex;
-    background-color: var(--Color2);
-    justify-content: space-evenly;
-    padding-bottom: 2%;
-    padding-top: 2%;
-}
-footer section a {
-    font-size: 1.1vw;
-}
-.nombre-seccion {
-    font-size: 1.3vw;
-    font-weight: bold;
-    padding-bottom: 5px;
-}
-footer section li {
-    font-size: 1.1vw;
-    text-align: justify;
-}
-.registro {
-    width: 24vw;
-}
-.registro-footer {
-    display: flex;
-    font-size: 1.3vw;
-    font-weight: bold;
-    justify-content: space-around;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    width: 100%;
-}
-.registro-footer div {
-    background-color: var(--Color6);
-    padding-bottom: 5px;
-    padding-top: 5px;
-    width: 90%;
-}
-.registro-footer a {
-    background-color: var(--Color4);
-    padding-bottom: 5px;
-    padding-top: 5px;
-    width: 10%;
-}
-.registro-footer a {
-    text-align: center;
-}
+    .catalogos-main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-bottom: 2vw;
+        margin-top: 2vw;
+    }
+    .catalogo-primavera-verano-mujeres, 
+    .catalogo-primavera-verano-hombres {
+        width: 40%;
+    }
+    .catalogo-primavera-verano-mujeres img, 
+    .catalogo-primavera-verano-hombres img {
+        height: 35vw;
+        width: 100%;
+    }
+    .catalogo-primavera-verano-mujeres .nombre-catalogo,
+    .catalogo-primavera-verano-hombres .nombre-catalogo {
+        font-size: 2.5vw;
+    }
+    .catalogo-primavera-verano-mujeres, .catalogo-primavera-verano-hombres {
+        padding-bottom: 0;
+    }
 
-/*----------------------------ESTILOS MAIN----------------------------*/
+    /*Estilos de las secciones importantes (debajo del catálogo)*/
+    
+    .secciones-importantes-main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .seccion-importante a div {
+        font-size: 3vw;
+        font-weight: bold;
+        padding-bottom: 4%;
+        padding-top: 4%;
+    }
+    .seccion-importante {
+        background-color: var(--Color5);
+        margin-bottom: 2vw;
+        margin-top: 2vw;
+        text-align: center;
+        width: 40vw;
+    }
 
-/*Estilos de los catálogos*/
+    /*Footer*/
 
-.catalogos-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 2vw;
-    margin-top: 2vw;
-    position: relative;
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    footer section {
+        margin-bottom: 0;
+        text-align: left;
+    }
+    .siguenos-tablet-celular {
+        width: 25%;
+    }
 }
+/*----------------------CONFIGURACIÓN PARA DESKOP----------------------*/
 
-.catalogo-primavera-verano-mujeres {
-    width: 40%;
-}
-.catalogo-primavera-verano-mujeres img {
-    height: 35vw;
-    width: 100%;
-}
-.catalogo-primavera-verano-mujeres .nombre-catalogo {
-    color: black;
-    font-weight: bold;
-    font-size: 2.5vw;
-    position: absolute;
-    left: 8vw;
-    top: 15vw;
-}
-.catalogo-primavera-verano-hombres {
-    width: 40%;
-}
-.catalogo-primavera-verano-hombres img {
-    height: 35vw;
-    width: 100%;
-}
-.catalogo-primavera-verano-hombres .nombre-catalogo {
-    color: black;
-    font-weight: bold;
-    font-size: 2.5vw;
-    position: absolute;
-    right: 8.5vw;
-    top: 15vw;
-}
+@media (min-width: 769px) {
 
-/*Estilos de las secciones importantes (debajo del catálogo)*/
+    .barra-de-busqueda input {
+        margin-top: 15px;
+        padding: 3px;
+    }
+    .barra-de-navegacion {
+        margin-bottom: 5%;
+    }
+    .barra-de-navegacion:hover .barra-de-opciones-deskop a{
+        color: var(--Color1);
+    }
+    .barra-de-opciones-deskop {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 17px;
+        width: 28vw;
+    }
+    .barra-de-opciones-deskop li {
+        font-size: 1.2vw;
+        text-align: center;
+        width: 100%;
+    }
+    .barra-de-opciones-iconos {
+        padding-top: 16px;
+    }
+    .celular-tablet, .siguenos-tablet-celular {
+        display: none;
+    }
+    .colecciones, .registro {
+        display: block;
+    }
+    .deskop {
+        display: flex;
+        width: 35vw;
+    }
+    .fa-search::before {
+        top: 18px;
+    }
+    .ir-a-ofertas {
+        background-color: var(--Color3);
+        color: var(--Color2);
+        font-size: 3vw;
+        font-weight: bold;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        text-align: center;
+    }
+    .nombre-Berle-G {
+        text-align: center;
+        font-size: 35px;
+    }
+    .ofertas {
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-top: 30px;
+    }
+    .secciones-por-edades {
+        background-color: #e9ae9790;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+    }
+    .secciones-por-edades i {
+        font-size: 2vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        margin-top: 5%;
+    }
+    .secciones-por-edades img {
+        border-radius: 50%;
+        width:8vw;
+    }
+    .secciones-por-edades a {
+        align-items: center;
+        display:flex;
+        flex-direction: column;
+        font-size: 1.2vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: center;
+        width: 9.5vw;
+    }
 
-.secciones-importantes-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-.seccion-importante a div {
-    font-size: 3vw;
-    font-weight: bold;
-    padding-bottom: 4%;
-    padding-top: 4%;
-}
-.seccion-importante {
-    background-color: var(--Color5);
-    margin-bottom: 2vw;
-    margin-top: 2vw;
-    text-align: center;
-    width: 40vw;
+    /*Menú despegable de Header*/
+
+    .android-deskop, .ios-deskop {
+        padding: 2% 4%;
+    }
+    .android-deskop:hover {
+        background-color: var(--Color2);
+        border-radius: 15px;
+    }
+    .barra-de-navegacion:hover .item-menu-deskop i {
+        color: var(--Color1);
+    }
+    .barra-de-opciones-deskop a {
+        font-size: 110%;
+    }
+    .ios-deskop:hover {
+        background-color: var(--Color2);
+        border-radius: 15px;
+    }
+    .item-menu-deskop {
+        display: block;
+        font-size: 20px;
+        padding-top: 1.3vw;
+        position: relative;
+    }
+    .item-menu-deskop:hover i {
+        border-radius: 50%;
+        background-color: var(--Color4);
+        padding: 5px;
+    }
+    .item-menu-deskop:hover .opciones-despegables-deskop {
+        display: block;
+    }
+    .menu-despegable-deskop {
+        text-align: center;
+        width: 7vw;
+    }
+    .opciones-despegables-deskop {
+        background-color: var(--Color1);
+        border: 2px solid var(--Color4);
+        border-radius: 15px;
+        font-size: 1.2vw;
+        position: absolute;
+        width: 15vw;
+        display: none;
+    }
+
+    /*-------------------------ESTILOS FOOTER-------------------------*/
+
+    footer {
+        padding-bottom: 3%;
+        padding-top: 3%;
+    }
+    footer section a {
+        font-size: 1.2vw;
+    }
+    .nombre-seccion {
+        font-size: 1.4vw;
+    }
+    footer section li {
+        font-size: 1.2vw;
+        text-align: justify;
+    }
+    .registro {
+        width: 27vw;
+    }
+    .registro-footer {
+        display: flex;
+        font-size: 1.2vw;
+        font-weight: bold;
+        justify-content: space-around;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        width: 100%;
+    }
+    .registro-footer div {
+        background-color: var(--Color6);
+        padding-bottom: 5px;
+        padding-top: 5px;
+        width: 90%;
+    }
+    .registro-footer a {
+        background-color: var(--Color4);
+        padding-bottom: 5px;
+        padding-top: 5px;
+        width: 10%;
+    }
+    .registro-footer a {
+        text-align: center;
+    }    
+
 }

@@ -39,10 +39,6 @@
    display: none;
 }
 
-header:hover .secciones-por-edades {
-   display: inline-flex;
-}
-
 /*-------------------------ESTILOS LOGIN-------------------------*/
 
 .botón-enviar-borrar {
@@ -139,4 +135,36 @@ main label {
 
 .restablecer-contraseña {
    text-align: right;
+}
+
+/*----------------------CONFIGURACIÓN PARA CELULAR----------------------*/
+
+@media (min-width: 280px) {
+
+   main form {
+      width: 300px;
+   }
+   header {
+      height: auto;
+   }
+   main form h3 {
+      font-size: 15px;
+   }
+
+}
+
+/*----------------------CONFIGURACIÓN PARA DESKOP----------------------*/
+
+@media (min-width: 769px) {
+
+   header:hover .secciones-por-edades {
+      display: inline-flex;
+   }
+   main form {
+      width: 400px;
+   }
+   main form h3 {
+      font-size: 20px;
+   }
+   
 }
