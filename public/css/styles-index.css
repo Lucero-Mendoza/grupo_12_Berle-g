@@ -4,7 +4,7 @@
     --Color2:#e9ae97;
     --Color3:#000102;
     --Color4:rgb(201, 67, 67);
-    --Color5:#621970;
+    --Color5:rgba(43, 3, 51, 0.432);
     --Color6:#a1a7a1;
 }
 
@@ -202,7 +202,7 @@ li {
         padding-top: 4%;
     }
     .seccion-importante {
-        background-color: var(--Color5);
+        background-image: url("https://i.pinimg.com/originals/b0/e0/4e/b0e04e3b74012a57ebbf4e6e48aaae86.jpg");
         margin-bottom: 5vw;
         margin-top: 5vw;
         text-align: center;
@@ -276,11 +276,11 @@ li {
     }
     .catalogo-primavera-verano-mujeres, 
     .catalogo-primavera-verano-hombres {
-        width: 40%;
+        width: 42.5%;
     }
     .catalogo-primavera-verano-mujeres img, 
     .catalogo-primavera-verano-hombres img {
-        height: 35vw;
+        height: 37vw;
         width: 100%;
     }
     .catalogo-primavera-verano-mujeres .nombre-catalogo,
@@ -299,7 +299,7 @@ li {
         justify-content: space-evenly;
     }
     .seccion-importante a div {
-        font-size: 3vw;
+        font-size: 2.5vw;
         font-weight: bold;
         padding-bottom: 4%;
         padding-top: 4%;
@@ -309,7 +309,7 @@ li {
         margin-bottom: 2vw;
         margin-top: 2vw;
         text-align: center;
-        width: 40vw;
+        width: 42.5vw;
     }
 
     /*Footer*/
@@ -506,5 +506,8 @@ li {
     .registro-footer a {
         text-align: center;
     }    
+    .seccion-importante a div {
+        font-size: 2vw;
+    }
 
 }
