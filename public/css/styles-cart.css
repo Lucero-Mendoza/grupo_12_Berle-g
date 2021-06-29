@@ -1,0 +1,280 @@
+/*-----------------------PALETA DE COLORES-----------------------*/
+:root {
+    --Color1:#ffffff;
+    --Color2:#e9ae97;
+    --Color3:#000102;
+    --Color4:rgb(201, 67, 67);
+    --Color5:#621970;
+    --Color6:#a1a7a1;
+    --Color7:#f3d6ec;
+    --Color8:#97443e;
+    --Color9:#414040;
+    --Color10:rgb(214, 8, 59);
+}
+
+/*-------------------------ESTILOS FIJOS-------------------------*/
+* {
+    box-sizing: border-box;
+    font-family: 'Bree Serif', serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*-------------------------ESTILOS MAIN-------------------------*/
+
+/*----------------------CONFIGURACIÓN PARA CELULAR----------------------*/
+
+@media (min-width: 280px) {
+
+    .botón-enviar-borrar {
+        text-align: center;
+    }
+    .cantidad-de-articulos, .cantidad-total-por-articulo, .codigo-descuento {
+        display: flex;
+        flex-direction: column;
+    }
+    .cantidad-de-articulos label {
+        padding-right: 16px;
+    }
+    .cantidad-total-por-articulo label {
+        padding-right: 111px;
+    }
+    .codigo-descuento input{
+        margin-bottom: 3%;
+        margin-top: 3%;
+        width: 84vw;
+    }
+    .continuar-compra {
+        background-color: var(--Color3);
+        border: 2px solid var(--Color3);
+        color: var(--Color1);
+        font-size: 4.2vw;
+        margin-bottom: 3%;
+        margin-top: 3%;
+        padding: 1% 3%;
+        width: 100%;
+     }
+    .descripcion-producto {
+        font-size: 10px;
+        text-align: justify;
+    }
+    .detalle-de-compra {
+        border: 1px solid var(--Color6);
+        margin-top: 6%;
+        padding: 3%;
+    }
+    .detalle-de-compra p {
+        font-size: 12px;
+        text-align: justify;
+    }
+    .detalle-de-articulo-ejemplo {
+        padding-left: 4%;
+    }
+    .enviar {
+        background-color: var(--Color4);
+        border: 2px solid var(--Color4);
+        border-radius: 10px;
+        color: var(--Color3);
+        font-weight: bold;
+        margin-bottom: 3%;
+        margin-top: 3%;
+        padding: 1% 3%;
+        width: 80%;
+     }
+    .icon-cantidad {
+        text-align: right;
+    }
+    .imagen-de-articulo-ejemplo img {
+        width: 100px;
+    }
+
+    .nombre-producto {
+        font-weight: bold;
+        font-size: 5.4vw;
+    }
+
+    .precio-producto {
+        color: var(--Color6);
+        padding-bottom: 3%;
+        padding-top: 3%;
+    }
+    .producto-a-comprar-deskop-tablet .celular {
+        display: flex;
+    }
+    .producto-a-comprar-deskop-tablet input, .total-compra input {
+        border: 1px solid var(--Color9);
+        width: 140px;
+    }
+    .producto-a-comprar-deskop-tablet label {
+        color: var(--Color9);
+        font-size: 13px;
+    }
+    .tarjetas-aceptadas img {
+        padding-top: 3%;
+        width: 15vw;
+    }
+    .tarjetas-aceptadas div {
+        display: flex;
+    }
+    .tarjetas-aceptadas, .total-compra {
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }
+    .total-compra {
+        display: flex;
+        justify-content: space-between;
+    }
+    .total-compra label, .tarjetas-aceptadas {
+        font-size: 13px;
+    }
+
+    .entregas-devoluciones {
+        display: flex;
+        font-size: 4vw;
+        font-weight: bold;
+        justify-content: space-around;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        width: 100%;
+    }
+    .entregas-devoluciones div {
+        background-color: var(--Color6);
+        padding-bottom: 5px;
+        padding-top: 5px;
+        width: 90%;
+    }
+    .entregas-devoluciones a {
+        background-color: var(--Color4);
+        padding-bottom: 5px;
+        padding-top: 5px;
+        text-align: center;
+        width: 10%;
+    }
+    .tarjetas-aceptadas img {
+        width: 10vw;
+        padding-right: 3%;
+    }
+}
+
+/*----------------------CONFIGURACIÓN PARA TABLET----------------------*/
+
+@media (min-width: 480px) {
+
+    .codigo-descuento input {
+        width: 40vw;
+    }
+    .continuar-compra {
+        font-size: 2.8vw;
+    }
+    .descripcion-producto {
+        font-size: 13px;
+    }
+    .detalle-de-compra p {
+        font-size: 14px;
+    }
+    .enviar {
+        font-size: 16px;
+        width: 30%;
+    }
+    .entregas-devoluciones {
+        font-size: 2.5vw;
+    }
+    main .fa-heart::before {
+        font-size: 20px;
+    }
+    main {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .me-encanta-icon {
+        padding-bottom: 3%;
+        padding-top: 3%;
+    }
+    .nombre-producto {
+        font-size: 20px;
+    }
+    .tarjetas-aceptadas img {
+        width: 8vw;
+    }
+    .tarjetas-aceptadas div {
+        justify-content: left;
+    }
+    .total-compra label, .tarjetas-aceptadas {
+        font-size: 16px;
+    }
+}
+
+/*----------------------CONFIGURACIÓN PARA DESKOP----------------------*/
+
+@media (min-width: 769px) {
+
+    main {
+        padding-left: 3%;
+        padding-right: 3%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .codigo-descuento input {
+        width: 100%;
+    }
+    .producto-a-comprar-deskop-tablet {
+        display: flex;
+        justify-content: space-between;
+    }
+    .detalle-de-articulo-ejemplo {
+        width: 32vw;
+        padding-left: 2%;
+    }
+    .continuar-compra {
+        font-size: 1.7vw;
+    }
+    .enviar {
+        font-size: 15px;
+        width: 50%;
+    }
+    main .fa-heart::before {
+        font-size: 30px;
+    }
+    .icon-cantidad {
+        width: 13vw;
+    }
+    .imagen-de-articulo-ejemplo img {
+        width: 9vw;
+    }
+    .me-encanta-icon {
+        padding-bottom: 5%;
+        padding-top: 7%;
+    }
+    .nombre-producto {
+        font-size: 23px;
+    }
+    .producto-a-comprar-deskop-tablet input {
+        width: 100%;
+    }
+    .icon-cantidad {
+        text-align: left;
+    }
+    .producto-a-comprar-deskop-tablet {
+        width: 56vw;
+    }
+    .detalle-de-compra {
+        width: 35vw;
+        margin: 0;
+    }
+    .detalle-de-compra p {
+        font-size: 13px;
+    }
+    .tarjetas-aceptadas img {
+        width: 5vw;
+    }
+    .total-compra input {
+        width: 40%;
+    }
+    .total-compra label {
+        font-size: 15px;
+    }
+    .entregas-devoluciones {
+        font-size: 1.6vw;
+    }
+}

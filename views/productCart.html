@@ -1,15 +1,17 @@
-<!DOCTYPE html><!--Carrito de compras-->
+<!DOCTYPE html><!--Página de ingreso a cuenta-->
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito de compras</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/styles-index.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carrito de compras</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/styles-index.css">
+        <link rel="stylesheet" href="/css/styles-cart.css">
 </head>
 
 <body>
@@ -88,16 +90,85 @@
             <i class="fas fa-chevron-right"></i>
         </div>
     
-        <div class="ofertas"><a href="/sales"><div class="ir-a-ofertas">Rebajas</div></a></div>
-    
         <div>&nbsp</div>
     
     </header>
 
+    <div>&nbsp</div>
+
     <main>
 
+        <section class="producto-a-comprar-deskop-tablet">
+            <div class="celular">
+                <div class="imagen-de-articulo-ejemplo"><img src="/img/my-product.jpg" alt=""></div>
+                <div class="detalle-de-articulo-ejemplo">
+                    <div class="nombre-producto">Nombre del producto</div>
+                    <div class="precio-producto">$000.00</div>
+                    <p class="descripcion-producto">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Nisi ipsa consequatur iure deleniti ut est hic aut, 
+                    illo officiis odit voluptatem. Optio, molestiae.</p>
+                </div>
+            </div>
+
+            <div class="icon-cantidad">
+                <div class="me-encanta-icon"><i class="far fa-heart"></i></div>
+                <div class="cantidad-de-articulos">
+                    <label>Cantidad de artículos</label>
+                    <div class="input-icon-cantidad"><input type="text"></div>
+                </div>
+                <div class="cantidad-total-por-articulo">
+                    <label>Total</label>
+                    <div class="input-icon-cantidad"><input type="text"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="detalle-de-compra">
+
+            <div class="codigo-descuento">
+                <label>Agregar código de descuento</label>
+                <div><input type="text"></div>
+            </div>
+
+            <div class="botón-enviar-borrar">
+                <button type="submit" class="enviar">INGRESAR</button>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quae distinctio incidunt ut, officiis odit natus?</p>
+
+            <div class="total-compra">
+                <label>Total</label>
+                <input type="text">
+            </div>
+
+            <div class="botón-continuar-compra">
+                <button type="submit" class="continuar-compra">CONTINUAR CON LA COMPRA</button>
+            </div>
+            
+            <div class="tarjetas-aceptadas">
+                <div>Aceptamos:</div>
+                <div>
+                    <img src="/img/american-express.jpg" alt="">
+                    <img src="/img/pay-pal.jpg" alt="">
+                    <img src="/img/visa.jpg" alt="">
+                    <img src="/img/mastercard.png" alt="">
+                </div>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Doloremque quae eum nostrum sint incidunt maiores ratione.</p>
+            
+            <div class="entregas-devoluciones">
+                <div>Formas de entregas y devoluciones</div>
+                <a href="/deliveries-and-returns"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        
+            </section>
     </main>
 
+    <div>&nbsp</div>
+    
     <footer>
         
         <section class="colecciones">
