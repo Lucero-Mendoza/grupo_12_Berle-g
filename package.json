@@ -6,17 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Lucero-Mendoza/grupo_12_Berli-g.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Lucero-Mendoza/grupo_12_Berli-g/issues"
-  },
-  "homepage": "https://github.com/Lucero-Mendoza/grupo_12_Berli-g#readme",
   "dependencies": {
     "express": "^4.17.1"
   }
