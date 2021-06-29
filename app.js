@@ -12,32 +12,28 @@ app.listen( process.env.PORT || 3000, () => {
 
 app.get("/", (req, res) => {
     res.sendFile( path.resolve(__dirname, "./views/index.html") );
-})
+});
 
 app.get("/access/login", (req, res) => {
     res.sendFile( path.resolve(__dirname, "./views/login.html") );
-})
+});
 
 app.get("/men-spring-summer", (req, res) => {
     res.sendFile( path.resolve(__dirname, "./views/detail-men-catalog.html") );
-})
+});
 
 app.get("/cart", (req, res) => {
     res.sendFile( path.resolve(__dirname, "./views/productCart.html") );
-})
+});
 
 app.get("/productpage", (req, res) => {
-    res.sendFile( path.resolve(__dirname, "./views/productDetail.html") );
-})
+    res.sendFile( path.resolve(__dirname, "./views/articleDetail.html") );
+});
 
 app.get("/access/register", (req, res) => {
     res.sendFile( path.resolve(__dirname, "./views/register.html") );
-})
-/* FALTA
-app.get("/women", (req, res) => {
-    res.sendFile( path.resolve(__dirname, "./views/women.html") );
-})
-*/
+});
+
 app.get("/women-spring-summer", (req, res) => {
     res.sendFile( path.resolve(__dirname, "./views/detail-women-catalog.html") );
-})
+});
