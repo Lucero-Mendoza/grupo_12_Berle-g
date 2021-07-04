@@ -1,9 +1,9 @@
 productsController = {
     catalogWomen: (req, res) => {
-        res.render ("../views/detail-women-catalog.ejs");
+        res.render ("../views/products/detail-women-catalog.ejs");
     },
     catalogMen: (req, res) => {
-        res.render ("../views/detail-men-catalog.ejs");
+        res.render ("../views/products/detail-men-catalog.ejs");
     }
 };
 

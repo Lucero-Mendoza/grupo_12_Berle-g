@@ -1,6 +1,6 @@
 mainController = {
     index: (req, res) => {
-        res.render ("../views/index.ejs");
+        res.render ("../views/main/index.ejs");
     }
 };
 

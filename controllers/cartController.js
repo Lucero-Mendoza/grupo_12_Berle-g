@@ -1,6 +1,6 @@
 cartController = {
     productCart: (req, res) => {
-        res.render ("../views/productCart.ejs");
+        res.render ("../views/cart/productCart.ejs");
     }
 };
 

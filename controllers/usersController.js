@@ -1,9 +1,9 @@
 usersController = {
     login: (req, res) => {
-        res.render ("../views/login.ejs");
+        res.render ("../views/users/login.ejs");
     },
     register: (req, res) => {
-        res.render ("../views/register.ejs");
+        res.render ("../views/users/register.ejs");
     }
 };
 
