@@ -1,39 +1,22 @@
 const express = require("express");
-const path    = require("path");
-
 const app     = express();
+const path    = require("path");
+const rutasMain = require("./routes/main");
+const rutasCart = require("./routes/cart");
+const rutasProducts = require("./routes/products");
+const rutasUsers = require("./routes/users");
 
-const publicPath = path.resolve(__dirname, "./public");
-app.use( express.static(publicPath) );
+/*-------------------------------Comandos con app-------------------------------*/
 
 app.listen( process.env.PORT || 3000, () => {
     console.log("Servidor corriendo en el puerto 3000");
 } );
 
-app.get("/", (req, res) => {
-    res.sendFile( path.resolve(__dirname, "./views/index.html") );
-});
+app.set("view engine", "ejs");
 
-app.get("/access/login", (req, res) => {
-    res.sendFile( path.resolve(__dirname, "./views/login.html") );
-});
+app.use(express.static("public"));
 
-app.get("/men-spring-summer", (req, res) => {
-    res.sendFile( path.resolve(__dirname, "./views/detail-men-catalog.html") );
-});
-
-app.get("/cart", (req, res) => {
-    res.sendFile( path.resolve(__dirname, "./views/productCart.html") );
-});
-
-app.get("/productpage", (req, res) => {
-    res.sendFile( path.resolve(__dirname, "./views/articleDetail.html") );
-});
-
-app.get("/access/register", (req, res) => {
-    res.sendFile( path.resolve(__dirname, "./views/register.html") );
-});
-
-app.get("/women-spring-summer", (req, res) => {
-    res.sendFile( path.resolve(__dirname, "./views/detail-women-catalog.html") );
-});
+app.use("/", rutasMain);
+app.use("/cart", rutasCart);
+app.use("/catalog", rutasProducts);
+app.use("/access", rutasUsers);
