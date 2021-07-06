@@ -1,14 +1,8 @@
 /*-----------------------PALETA DE COLORES-----------------------*/
 :root {
-    --Color1:#ffffff;
-    --Color2:#e9ae97;
-    --Color3:#000102;
-    --Color4:rgb(201, 67, 67);
-    --Color5:#621970;
-    --Color6:#a1a7a1;
-    --Color7:#f3d6ec;
-    --Color8:#97443e;
-    --Color9:#414040;
+    --Color7-login:#f3d6ec;
+    --Color8-login:#97443e;
+    --Color9-login:#414040;
 }
 
 /*-------------------------ESTILOS FIJOS-------------------------*/
@@ -20,121 +14,108 @@
     padding: 0px;
 }
 
+.ir-a-ofertas,
+.ofertas {
+   display: none;
+}
+
 /*--------------------MODIFICACIONES A HEADER--------------------*/
 
-.barra-de-navegacion {
+nav {
    background-image: url("https://wi.wallpapertip.com/wsimgs/56-565219_carmine.jpg");
    margin-bottom: 0;
 }
-
-.barra-de-navegacion:hover {
+nav:hover {
    background-image: url("https://images.alphacoders.com/871/thumb-1920-87123.jpg");
 }
-
 #fondo-header {
    background-image: none;
 }
-
 .secciones-por-edades {
    display: none;
 }
 
 /*-------------------------ESTILOS LOGIN-------------------------*/
 
-.botón-enviar-borrar {
+.boton-de-ingreso {
    display: flex;
    justify-content: center;
 }
-
-.contraseña, .usuario {
+.contraseña, 
+.usuario {
    display: flex;
    flex-direction: column;
    margin-bottom: 20px;
    align-items: center;
 }
-
 .enlace-para-registro {
    font-size: 13px;
    text-align: left;
 }
-
 .enlace-para-registro a {
-   color: var(--Color9);
+   color: var(--Color9-login);
    font-size: 13px;
    font-style: italic;
 }
-
 .enviar {
-   background-color: var(--Color4);
-   border: 2px solid var(--Color4);
+   background-color: var(--Color4-index);
+   border: 2px solid var(--Color4-index);
    border-radius: 10px;
-   color: var(--Color3);
+   color: var(--Color3-index);
    font-weight: bold;
    margin-bottom: 3%;
    margin-top: 3%;
    padding: 1% 3%;
    width: 80%;
 }
-
 .enviar:hover {
-    background-color: var(--Color8);
-    border: 2px solid var(--Color8);
+    background-color: var(--Color8-login);
+    border: 2px solid var(--Color8-login);
 }
-
 main {
    display: flex;
    justify-content: center;
 }
-
 main form {
-   background-color: var(--Color6);
-   border: solid 1px var(--Color4);
+   background-color: var(--Color6-index);
+   border: solid 1px var(--Color4-index);
    border-radius: 5px;
-   box-shadow: 0px 0px 10px var(--Color4);
+   box-shadow: 0px 0px 10px var(--Color4-index);
    padding: 6px;
    text-align: center;
    width: 400px;
 }
-
 main form div {
    margin-bottom: 6px;
    margin-top: 6px;
 }
-
 main form h3 {
-   color: var(--Color3);
    margin-bottom: 20px;
    margin-top: 15px;
    text-align: center;
 }
-
 main form input {
    width: 80%;
 }
-
 main form input:hover {
-   background-color: var(--Color7);
+   background-color: var(--Color7-login);
 }
-
 main input {
-   border: solid 1px var(--Color4);
+   border: solid 1px var(--Color4-index);
    border-radius: 20px;
    padding: 5px;
 }
-
 main label {
    font-size: 13px;
 }
-
+.restablecer-contraseña {
+   text-align: right;
+}
 .restablecer-contraseña a {
    font-size: 13px;
    font-style: italic;
    font-weight: bold;
    margin-top: 2%;
-}
-
-.restablecer-contraseña {
-   text-align: right;
 }
 
 /*----------------------CONFIGURACIÓN PARA CELULAR----------------------*/
@@ -153,7 +134,7 @@ main label {
 
 }
 
-/*----------------------CONFIGURACIÓN PARA DESKOP----------------------*/
+/*----------------------CONFIGURACIÓN PARA DESKTOP----------------------*/
 
 @media (min-width: 769px) {
 

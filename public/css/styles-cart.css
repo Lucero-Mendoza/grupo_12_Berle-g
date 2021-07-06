@@ -26,7 +26,7 @@
 
 @media (min-width: 280px) {
 
-    .botón-enviar-borrar {
+    .boton-ingresar {
         text-align: center;
     }
     .cantidad-de-articulos, .cantidad-total-por-articulo, .codigo-descuento {
@@ -98,14 +98,14 @@
         padding-bottom: 3%;
         padding-top: 3%;
     }
-    .producto-a-comprar-deskop-tablet .celular {
+    .producto-a-comprar-desktop-tablet .celular {
         display: flex;
     }
-    .producto-a-comprar-deskop-tablet input, .total-compra input {
+    .producto-a-comprar-desktop-tablet input, .total-compra input {
         border: 1px solid var(--Color9);
         width: 140px;
     }
-    .producto-a-comprar-deskop-tablet label {
+    .producto-a-comprar-desktop-tablet label {
         color: var(--Color9);
         font-size: 13px;
     }
@@ -204,7 +204,7 @@
     }
 }
 
-/*----------------------CONFIGURACIÓN PARA DESKOP----------------------*/
+/*----------------------CONFIGURACIÓN PARA DESKTOP----------------------*/
 
 @media (min-width: 769px) {
 
@@ -218,7 +218,7 @@
     .codigo-descuento input {
         width: 100%;
     }
-    .producto-a-comprar-deskop-tablet {
+    .producto-a-comprar-desktop-tablet {
         display: flex;
         justify-content: space-between;
     }
@@ -249,13 +249,13 @@
     .nombre-producto {
         font-size: 23px;
     }
-    .producto-a-comprar-deskop-tablet input {
+    .producto-a-comprar-desktop-tablet input {
         width: 100%;
     }
     .icon-cantidad {
         text-align: left;
     }
-    .producto-a-comprar-deskop-tablet {
+    .producto-a-comprar-desktop-tablet {
         width: 56vw;
     }
     .detalle-de-compra {
