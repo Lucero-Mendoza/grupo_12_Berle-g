@@ -1,18 +1,11 @@
 /*-----------------------PALETA DE COLORES-----------------------*/
 :root {
-    --Color10-register:#621970;
-    --Color8-register:#97443e;
-    --Color9-register:#414040;
+    --Color1-register:#621970;
+    --Color2-register:#97443e;
+    --Color3-register:#414040;
 }
 
 /*-------------------------ESTILOS FIJOS-------------------------*/
-
-* {
-    box-sizing: border-box;
-    font-family: 'Bree Serif', serif;
-    margin: 0px;
-    padding: 0px;
-}
 
 .ir-a-ofertas,
 .ofertas {
@@ -69,8 +62,8 @@ nav:hover {
    width: 80%;
 }
 .crear-cuenta:hover {
-    background-color: var(--Color8-register);
-    border: 2px solid var(--Color8-register);
+    background-color: var(--Color2-register);
+    border: 2px solid var(--Color2-register);
 }
 .datos-personales, .informacion-de-ingreso input {
    width: 100%;
@@ -91,14 +84,14 @@ nav:hover {
 }
 .ingresar-google div {
     align-items: center;
-    color: var(--Color9-register);
+    color: var(--Color3-register);
     display: flex;
     font-size: 13px;
     justify-content: center;
     padding: 1%;
 }
 main {
-    color: var(--Color9-register);
+    color: var(--Color3-register);
     display: flex;
     justify-content: center;
 }
@@ -121,14 +114,14 @@ main input {
    padding: 5px;
 }
 main form input:hover {
-   background-color: var(--Color7-login);
+   background-color: var(--Color1-login);
 }
 main label {
    font-size: 13px;
    text-align: left;
 }
 main .nombre-seccion {
-    border-bottom: 0.5px solid var(--Color10-register);
+    border-bottom: 0.5px solid var(--Color1-register);
     font-size: 14px;
     margin-bottom: 4%;
     margin-top: 4%;

@@ -13,7 +13,7 @@ ________________________________________________________________________________
 
 Berle G
 
-Berli g es un e-commerce creado para DH Venture Capitals con el objetivo de vender de forma eléctronica ropa a cualquier persona que la desee. Sin embargo, se enfoca en atender las necesidades de personas de 0 a 40 años. 
+Berle g es un e-commerce creado para DH Venture Capitals con el objetivo de vender de forma eléctronica ropa a cualquier persona que la desee. Sin embargo, se enfoca en atender las necesidades de personas de 0 a 40 años. 
 
 Para el grupo infantil, se ofrecerá ropa llena de diversión, comodidad, creatividad y sobre todo libre de etiquetas, prejuicios y estereotipos.
 
@@ -77,10 +77,10 @@ El equipo de programadores de Digital House se está apoyando de dos herramienta
 
 En la plataforma de Trello, se han creado diversas tareas que se esperan cumplir en un tiempo establecido para, de esta forma, tener el trabajo listo en la fecha acordada con el cliente.
 
-URL: https://trello.com/invite/b/0xl0KCXd/d2b7a8572ef18c5ed38e18d2fb754ed3/berli-g-grupo-12
+URL: https://trello.com/b/0xl0KCXd/berle-g-grupo-12
 
 2. GitHub
 
 Es una plataforma que ha ayudado al equipo a trabajar con orden, hacer revisiones y correcciones en el trabajo de cada integrante, así como guardar un historial de cambios realizados por cada uno de los integrantes.
 
-URL: https://github.com/Lucero-Mendoza/grupo_12_Berli-g
+URL: https://github.com/Lucero-Mendoza/grupo_12_Berle-g

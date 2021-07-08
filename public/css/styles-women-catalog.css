@@ -12,14 +12,6 @@
     --Color10:rgb(214, 8, 59);
 }
 
-/*-------------------------ESTILOS FIJOS-------------------------*/
-* {
-    box-sizing: border-box;
-    font-family: 'Bree Serif', serif;
-    margin: 0px;
-    padding: 0px;
-}
-
 /*----------------------CONFIGURACIÓN DEL MAIN----------------------*/
 
 .descripcion-general-articulo {

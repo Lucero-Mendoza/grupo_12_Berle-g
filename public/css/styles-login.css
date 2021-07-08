@@ -1,18 +1,11 @@
 /*-----------------------PALETA DE COLORES-----------------------*/
 :root {
-    --Color7-login:#f3d6ec;
-    --Color8-login:#97443e;
-    --Color9-login:#414040;
+    --Color1-login:#fff8f2;
+    --Color2-login:#97443e;
+    --Color3-login:#414040;
 }
 
 /*-------------------------ESTILOS FIJOS-------------------------*/
-
-* {
-    box-sizing: border-box;
-    font-family: 'Bree Serif', serif;
-    margin: 0px;
-    padding: 0px;
-}
 
 .ir-a-ofertas,
 .ofertas {
@@ -53,7 +46,7 @@ nav:hover {
    text-align: left;
 }
 .enlace-para-registro a {
-   color: var(--Color9-login);
+   color: var(--Color3-login);
    font-size: 13px;
    font-style: italic;
 }
@@ -69,15 +62,15 @@ nav:hover {
    width: 80%;
 }
 .enviar:hover {
-    background-color: var(--Color8-login);
-    border: 2px solid var(--Color8-login);
+    background-color: var(--Color2-login);
+    border: 2px solid var(--Color2-login);
 }
 main {
    display: flex;
    justify-content: center;
 }
 main form {
-   background-color: var(--Color6-index);
+   background-image: url("/img/img-main/formulario-login.jpg");
    border: solid 1px var(--Color4-index);
    border-radius: 5px;
    box-shadow: 0px 0px 10px var(--Color4-index);
@@ -98,7 +91,7 @@ main form input {
    width: 80%;
 }
 main form input:hover {
-   background-color: var(--Color7-login);
+   background-color: var(--Color1-login);
 }
 main input {
    border: solid 1px var(--Color4-index);

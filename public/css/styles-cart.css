@@ -13,11 +13,10 @@
 }
 
 /*-------------------------ESTILOS FIJOS-------------------------*/
-* {
-    box-sizing: border-box;
-    font-family: 'Bree Serif', serif;
-    margin: 0px;
-    padding: 0px;
+
+.ir-a-ofertas,
+.ofertas {
+   display: none;
 }
 
 /*-------------------------ESTILOS MAIN-------------------------*/
@@ -80,14 +79,13 @@
         margin-top: 3%;
         padding: 1% 3%;
         width: 80%;
-     }
+    }
     .icon-cantidad {
         text-align: right;
     }
     .imagen-de-articulo-ejemplo img {
         width: 100px;
     }
-
     .nombre-producto {
         font-weight: bold;
         font-size: 5.4vw;

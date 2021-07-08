@@ -26,45 +26,21 @@
 
         <div class="articulos-mujer-catalogo">
 
-            <article>
-                <img src="/img/img-mujeres/blusa-floral.jpg" alt="">
-                <div class="descripcion-general-articulo">
-                    <p class="nombre-producto"><strong>Blusa corta con estampado floral</strong></p>
-                    <p class="precio">$359.00</p>
-                    <p class="descuento">-60%</p>
-                    <div class="fa-truck-article"><i class="fas fa-truck"></i></div>
-                </div>
-            </article>
-
-            <article>
-                <img src="/img/img-mujeres/blusa-nudo-roja.jpg" alt="">
-                <div class="descripcion-general-articulo">
-                    <p class="nombre-producto"><strong>Blusa corta con nudo delantero</strong></p>
-                    <p class="precio">$359.00</p>
-                    <p class="descuento">-60%</p>
-                    <div class="fa-truck-article"><i class="fas fa-truck"></i></div>
-                </div>
-            </article>
-
-            <article>
-                <img src="/img/img-mujeres/camiseta-colorblock.jpg" alt="">
-                <div class="descripcion-general-articulo">
-                    <p class="nombre-producto"><strong>Camiseta color block tee</strong></p>
-                    <p class="precio">$359.00</p>
-                    <p class="descuento">-60%</p>
-                    <div class="fa-truck-article"><i class="fas fa-truck"></i></div>
-                </div>
-            </article>
-
-            <article>
-                <img src="/img/img-mujeres/camiseta-tirantes.jpg" alt="">
-                <div class="descripcion-general-articulo">
-                    <p class="nombre-producto"><strong>Camiseta de tirantes con ojales</strong></p>
-                    <p class="precio">$359.00</p>
-                    <p class="descuento">-60%</p>
-                    <div class="fa-truck-article"><i class="fas fa-truck"></i></div>
-                </div>
-            </article>
+            <% for(let i = 0 ; i < listProductsWomen.length ; i++) { %>
+            
+                <article>
+                    <a href="/catalog/women-spring-summer/product/<%= listProductsWomen[i].id %>">
+                    <img src= "<%= listProductsWomen[i].imagen %>" alt="">
+                    <div class="descripcion-general-articulo">
+                        <p class="nombre-producto"><strong><%= listProductsWomen[i].nombre %></strong></p>
+                        <p class="precio"><%= listProductsWomen[i].precio %></p>
+                        <p class="descuento"><%= listProductsWomen[i].descuento %></p>
+                        <div class="fa-truck-article"><i class="fas fa-truck"></i></div>
+                    </div>
+                    </a>
+                </article>
+                
+            <% } %>
 
         </div>
 

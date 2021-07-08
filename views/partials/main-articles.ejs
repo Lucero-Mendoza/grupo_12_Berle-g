@@ -1,0 +1,74 @@
+<main>
+
+    <div class="apartado-tablet-desktop">
+
+        <h3 class="nombre-producto-celular"><%= articuloBuscado.nombre %></h3>
+
+        <div class="imagen-producto">
+            <img class="imagen" src= "<%= articuloBuscado.imagen %>" alt="">
+        </div>
+
+        <div class="apartado-tablet-desktop-sin-img">
+            <div class="nombreTD-botonCG">
+
+                <h3 class="nombre-producto-tablet-desktop"><%= articuloBuscado.nombre %></h3>
+
+                <form class="formulario-1" action="/" method="">
+                    <div class="boton-guardar-producto">
+                        <button type="submit" class="guardar"><i class="far fa-heart"></i></button>
+                    </div>
+                </form>
+
+                <form class="formulario-2" action="/" method="">
+                    <div class="boton-añadir-a-carrito">
+                    <button type="submit" class="enviar"><i class="fas fa-shopping-bag"></i> Añadir</button>
+                    </div>
+                </form>
+
+            </div>
+
+            <div>
+                <div class="precio"><%= articuloBuscado.precio %></div>
+            </div>
+
+            <div class="otros-colores">
+                <img class="color-1" src= "<%= articuloBuscado.color1 %>" alt="">
+                <img class="color-2" src= "<%= articuloBuscado.color2 %>" alt="">
+                <img class="color-3" src= "<%= articuloBuscado.color3 %>" alt="">
+                <img class="color-4" src= "<%= articuloBuscado.color4 %>" alt="">
+            </div>
+
+            <div class="disponibilidad"><%= articuloBuscado.disponibilidad %></div>
+
+            <div class="seleccion-y-guia-tallas">
+                <form action="/" method="">
+                    <select>
+                        <option>CH</option>
+                        <option>M</option>
+                        <option>G</option>
+                    </select>
+                </form>
+
+                <div><a href="/size-guide">Guía de tallas</a></div>
+            </div>
+
+            <div class="descripciones-TD">
+                <p><%= articuloBuscado.descripcion %></p>
+                <p>Otras caracteristicas</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="descripciones-C">
+        <p><%= articuloBuscado.descripcion %></p>
+        <p>Otras caracteristicas</p>
+    </div>
+
+    <div class="info-entrega-pago-origen">
+        <a href="/information">INFORMACIÓN</a>
+        <a href="/delivery-payment">ENTREGA Y PAGO</a>
+        <a href="/product-origin">ORIGEN DEL PRODUCTO</a>
+    </div>
+</main>

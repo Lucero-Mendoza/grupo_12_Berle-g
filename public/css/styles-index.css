@@ -4,8 +4,9 @@
     --Color2-index:#e9ae97;
     --Color3-index:#000102;
     --Color4-index:rgb(201, 67, 67);
-    --Color5-index:rgba(43, 3, 51, 0.432);
+    --Color5-index:rgba(43, 3, 51);
     --Color6-index:#a1a7a1;
+    --Color7-index:rgba(248, 95, 95, 0.945);
 }
 
 /*-------------------------ESTILOS FIJOS-------------------------*/
@@ -96,7 +97,7 @@ nav:hover .nombre-Berle-G {
         padding: 1.5px;
     }
     .barra-de-opciones-celular-tablet {
-        background-color: var(--Color4-index);
+        background-color: var(--Color7-index);
         display: none;
         font-size: 10px;
         top: 32.5px;
@@ -188,9 +189,17 @@ nav:hover .nombre-Berle-G {
     .colecciones {
         display: none;
     }
+    .fa-facebook::before,
+    .fa-twitter::before,
+    .fa-instagram::before,
+    .fa-youtube::before,
+    .fa-pinterest::before {
+        font-size: 22px;
+        color:var(--Color5-index);
+    }
     footer {
         background-color: var(--Color2-index);
-        padding: 5%;
+        padding: 3% 5% 0.05% 5%;
         text-align: center;
     }
     footer section {
@@ -203,6 +212,7 @@ nav:hover .nombre-Berle-G {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        margin-top: 2%;
     }
     .nombre-seccion {
         font-size: 16px;
@@ -214,6 +224,9 @@ nav:hover .nombre-Berle-G {
     }
     .siguenos-desktop {
         display: none;
+    }
+    .siguenos-tablet-celular {
+        font-weight: bold;
     }
 
 }
@@ -282,7 +295,6 @@ nav:hover .nombre-Berle-G {
         justify-content: space-evenly;
     }
     .seccion-importante {
-        background-color: var(--Color5-index);
         margin-bottom: 2vw;
         margin-top: 2vw;
         text-align: center;
@@ -290,9 +302,6 @@ nav:hover .nombre-Berle-G {
     }
     .seccion-importante a div {
         font-size: 2.5vw;
-        font-weight: bold;
-        padding-bottom: 4%;
-        padding-top: 4%;
     }
 
     /*Footer*/
@@ -302,14 +311,27 @@ nav:hover .nombre-Berle-G {
         justify-content: space-evenly;
         padding-left: 0;
         padding-right: 0;
+        padding-bottom: 2%;
+        padding-top: 2%;
+    }
+    footer a {
+        font-size: 11px;
     }
     footer section {
         margin-bottom: 0;
         text-align: left;
     }
-    .siguenos-tablet-celular {
-        width: 25%;
+    .iconos-redes {
+        justify-content: space-between;
     }
+    .nombre-seccion {
+        font-size: 13px;
+    }
+    .siguenos-tablet-celular {
+        width: 30%;
+        font-size: 13px;
+    }
+
 }
 /*----------------------CONFIGURACIÓN PARA DESKTOP----------------------*/
 
@@ -389,6 +411,9 @@ nav:hover .nombre-Berle-G {
         text-align: center;
         width: 9.5vw;
     }
+    .siguenos-desktop {
+        display: block;
+    }
     .siguenos-tablet-celular {
         display: none;
     }
@@ -405,7 +430,7 @@ nav:hover .nombre-Berle-G {
         color: var(--Color1-index);
     }
     .barra-de-opciones-desktop a {
-        font-size: 110%;
+        font-size: 100%;
     }
     .ios-desktop:hover {
         background-color: var(--Color2-index);
@@ -439,18 +464,14 @@ nav:hover .nombre-Berle-G {
 
     /*-------------------------ESTILOS FOOTER-------------------------*/
 
-    footer {
-        padding-bottom: 3%;
-        padding-top: 3%;
-    }
     footer section a {
-        font-size: 1.2vw;
+        font-size: 1.1vw;
     }
     .nombre-seccion {
-        font-size: 1.4vw;
+        font-size: 1.3vw;
     }
     footer section li {
-        font-size: 1.2vw;
+        font-size: 1.1vw;
         text-align: justify;
     }
     .registro {
