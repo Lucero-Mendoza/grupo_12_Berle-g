@@ -1,6 +1,5 @@
 const express = require("express");
 const app     = express();
-const path    = require("path");
 const rutasMain = require("./routes/main");
 const rutasCart = require("./routes/cart");
 const rutasProducts = require("./routes/products");
@@ -17,6 +16,7 @@ app.set("view engine", "ejs");
 app.use(express.static("public"));
 
 app.use("/", rutasMain);
-app.use("/cart", rutasCart);
-app.use("/catalog", rutasProducts);
-app.use("/access", rutasUsers);
+app.use("/carrito", rutasCart);
+app.use("/productos", rutasProducts);
+app.use("/usuarios", rutasUsers);
+

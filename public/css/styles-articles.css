@@ -57,11 +57,12 @@ main .imagen-producto .imagen {
     .info-entrega-pago-origen {
         display: flex;
         flex-wrap: wrap;
-        font-size: 14px;
+        flex-direction: column;
+        font-size: 12px;
         font-weight: bold;
-        justify-content: space-around;
+        justify-content: space-between;
         padding-bottom: 10px;
-        padding-top: 10px;
+        padding-top: 100px;
     }
     .guardar {
         background: none;
@@ -129,7 +130,7 @@ main .imagen-producto .imagen {
         width: 30vw;
     }
     .info-entrega-pago-origen {
-        justify-content: space-between;
+        flex-direction: row;
     }
     main {
         padding-left: 3%;

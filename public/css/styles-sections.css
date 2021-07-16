@@ -85,6 +85,11 @@ main h3 {
 
 @media (min-width: 769px) {
 
+    .articulos-mujer-catalogo {
+        justify-content: space-between;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
     .descuento {
         font-size: 12px;
     }

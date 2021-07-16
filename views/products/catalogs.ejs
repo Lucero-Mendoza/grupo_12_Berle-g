@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hombre: primavera-verano</title>
+    <title>Catálogo <%= catalogoBuscado[1].seccion %></title>
     <%- include("../partials/head-links") %>
-    <link rel="stylesheet" href="/css/styles-men-catalog.css">
+    <link rel="stylesheet" href="/css/styles-sections.css">
 </head>
 
 <body>
@@ -22,19 +22,23 @@
 
         <div>&nbsp</div>
 
-        <h3>Catálogo primavera-verano 2021</h3>
+        <h3>
+            <% if (catalogoBuscado[1].catalogo == "primavera-verano-2021") { %>
+                Catálogo primavera-verano 2021
+            <% } %>
+        </h3>
 
         <div class="articulos-mujer-catalogo">
 
-            <% for(let i = 0 ; i < listProductsMen.length ; i++) { %>
+            <% for(let i = 0 ; i < catalogoBuscado.length ; i++) { %>
             
                 <article>
-                    <a href="/catalog/men-spring-summer/product/<%= listProductsMen[i].id %>">
-                    <img src= "<%= listProductsMen[i].imagen %>" alt="">
+                    <a href="/productos/detalle/<%= catalogoBuscado[i].seccion %>/<%= catalogoBuscado[i].id %>">
+                    <img src= "<%= catalogoBuscado[i].imagen %>" alt="">
                     <div class="descripcion-general-articulo">
-                        <p class="nombre-producto"><strong><%= listProductsMen[i].nombre %></strong></p>
-                        <p class="precio"><%= listProductsMen[i].precio %></p>
-                        <p class="descuento"><%= listProductsMen[i].descuento %></p>
+                        <p class="nombre-producto"><strong><%= catalogoBuscado[i].nombre %></strong></p>
+                        <p class="precio"><%= catalogoBuscado[i].precio %></p>
+                        <p class="descuento"><%= catalogoBuscado[i].descuento %></p>
                         <div class="fa-truck-article"><i class="fas fa-truck"></i></div>
                     </div>
                     </a>

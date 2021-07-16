@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mujer: primavera-verano</title>
+    <title>Seccion <%= listaProductos[1].seccion %></title>
     <%- include("../partials/head-links") %>
-    <link rel="stylesheet" href="/css/styles-women-catalog.css">
+    <link rel="stylesheet" href="/css/styles-sections.css">
 </head>
 
 <body>
@@ -22,19 +22,31 @@
 
         <div>&nbsp</div>
 
-        <h3>Catálogo primavera-verano 2021</h3>
+        <h3>
+            <% if (listaProductos[1].seccion == "mujer") { %>
+                Mujeres
+            <% } else if (listaProductos[1].seccion == "hombre") { %>
+                Hombres
+            <% } else if (listaProductos[1].seccion == "niña") {  %>
+                Niñas
+            <% } else if (listaProductos[1].seccion == "niño") {  %>
+                Niños
+            <% } else if (listaProductos[1].seccion == "niño") {  %>
+                Bebés
+            <% } %>
+        </h3>
 
         <div class="articulos-mujer-catalogo">
 
-            <% for(let i = 0 ; i < listProductsWomen.length ; i++) { %>
+            <% for(let i = 0 ; i < listaProductos.length ; i++) { %>
             
                 <article>
-                    <a href="/catalog/women-spring-summer/product/<%= listProductsWomen[i].id %>">
-                    <img src= "<%= listProductsWomen[i].imagen %>" alt="">
+                    <a href="/productos/detalle/<%= listaProductos[i].seccion %>/<%= listaProductos[i].id %>">
+                    <img src= "<%= listaProductos[i].imagen %>" alt="">
                     <div class="descripcion-general-articulo">
-                        <p class="nombre-producto"><strong><%= listProductsWomen[i].nombre %></strong></p>
-                        <p class="precio"><%= listProductsWomen[i].precio %></p>
-                        <p class="descuento"><%= listProductsWomen[i].descuento %></p>
+                        <p class="nombre-producto"><strong><%= listaProductos[i].nombre %></strong></p>
+                        <p class="precio"><%= listaProductos[i].precio %></p>
+                        <p class="descuento"><%= listaProductos[i].descuento %></p>
                         <div class="fa-truck-article"><i class="fas fa-truck"></i></div>
                     </div>
                     </a>
