@@ -30,7 +30,7 @@ nav:hover {
 
 /*-------------------------ESTILOS REGISTER-------------------------*/
 
-.apellido-materno, .apellido-paterno, .contraseña, .correo-electrónico, .fecha-nacimiento, .nombre {
+.apellido-materno, .apellido-paterno, .contraseña, .fecha-nacimiento, .nombre {
     display: flex;
     flex-direction: column;
     width: 48%;
@@ -49,6 +49,11 @@ nav:hover {
 }
 .boton-crear-cuenta {
    text-align: center;
+}
+.correo-electronico {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
 }
 .crear-cuenta {
    background-color: var(--Color4-index);
@@ -153,7 +158,7 @@ span {
 /*----------------------CONFIGURACIÓN PARA TABLET----------------------*/
 @media (min-width: 480px) {
 
-   .contraseñas, 
+   .contraseñas,
    .nombre-y-apellido {
       display: flex;
       flex-wrap: wrap;
