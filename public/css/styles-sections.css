@@ -1,71 +1,59 @@
-/*-----------------------PALETA DE COLORES-----------------------*/
-:root {
-    --Color1:#ffffff;
-    --Color2:#e9ae97;
-    --Color3:#000102;
-    --Color4:rgb(201, 67, 67);
-    --Color5:#621970;
-    --Color6:#a1a7a1;
-    --Color7:#f3d6ec;
-    --Color8:#97443e;
-    --Color9:#414040;
-    --Color10:rgb(214, 8, 59);
-}
-
 /*----------------------CONFIGURACIÓN DEL MAIN----------------------*/
 
-.descripcion-general-articulo {
-    margin-top: 1px;
-    position: relative;
-    padding-left: 2%;
-    padding-right: 2%;
-}
-.descuento {
-    color: var(--Color10);
-}
-.fa-truck:before {
-    color: var(--Color10);
-    border: 1px solid var(--Color10);
-    border-radius: 50%;
-    display: block;
-    font-size: 16px;
-    height: 20px;
-    padding: 5px;
-    position: absolute;
-    right: 3px;
-    top: 26px;
-    width: 20px;
-}
-main article {
-    margin-bottom: 5%;
-}
-main article img {
-    width: 100%;
-}
-main h3 {
-    color: var(--Color9);
-    margin-bottom: 12px;
-}
+    .articulos article {
+        margin-bottom: 5%;
+    }
+    .articulos article img {
+        width: 100%;
+    }
+    .descripcion-general-articulo {
+        margin-top: 1px;
+        position: relative;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .descuento {
+        color: var(--Color9-index);
+    }
+    .fa-truck:before {
+        color: var(--Color9-index);
+        border: 1px solid var(--Color9-index);
+        border-radius: 50%;
+        display: block;
+        font-size: 16px;
+        height: 20px;
+        padding: 5px;
+        position: absolute;
+        right: 3px;
+        top: 26px;
+        width: 20px;
+    }
+    .titulo-de-seccion {
+        color: var(--Color8-index);
+        margin-bottom: 12px;
+    }
 
 /*----------------------CONFIGURACIÓN PARA TABLET----------------------*/
 
 @media (min-width: 480px) {
 
+    .articulos {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .articulos article {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 40%;
+    }
+    .articulos article:hover {
+        box-shadow: 0px 0px 10px rgb( 100 , 100 , 100 );
+    }
     .descuento {
         font-size: 14px;
     }
     .fa-truck:before {
         top: 35px;
-    }
-    main article {
-        width: 42.5%;
-    }
-    main article:hover {
-        box-shadow: 0px 0px 10px rgb( 100 , 100 , 100 );
-    }
-    main h3 {
-        margin-left: 5%;
-        margin-right: 5%;
     }
     .nombre-producto {
         font-size: 14px;
@@ -74,10 +62,9 @@ main h3 {
     .precio {
         font-size: 16px;
     }
-    .articulos-mujer-catalogo {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+    .titulo-de-seccion  {
+        margin-left: 5%;
+        margin-right: 5%;
     }
 }
 
@@ -85,22 +72,19 @@ main h3 {
 
 @media (min-width: 769px) {
 
-    .articulos-mujer-catalogo {
-        justify-content: space-between;
+    .articulos {
         margin-left: 5%;
-        margin-right: 5%;
     }
-    .descuento {
-        font-size: 12px;
+    .articulos article {
+        margin-left: 0%;
+        margin-right: 5%;
+        width: 20%;
     }
     .descripcion-general-articulo {
         height: 100px;
     }
     .fa-truck:before {
         top: 54px;
-    }
-    main article {
-        width: 18.75%;
     }
     .nombre-producto {
         font-size: 14px;
@@ -111,11 +95,11 @@ main h3 {
 
 /*----------------------TRANSICIONES----------------------*/
 
-.fa-truck:before {
-    transition: all 300ms;
-}
-.fa-truck-article:hover > .fa-truck:before {
-    transform:rotate(360deg);
-    color: var(--Color2);
-    border: 1px solid var(--Color2);
-}
+    .fa-truck:before {
+        transition: all 300ms;
+    }
+    .fa-truck-article:hover > .fa-truck:before {
+        transform:rotate(360deg);
+        color: var(--Color2-index);
+        border: 1px solid var(--Color2-index);
+    }

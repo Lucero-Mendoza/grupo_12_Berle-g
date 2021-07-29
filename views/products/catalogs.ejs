@@ -18,23 +18,23 @@
 
 <!-- -------------------------MAIN------------------------- -->
 
-    <main>
+    <main class="contenido-vista-catalogos">
 
         <div>&nbsp</div>
 
-        <h3>
+        <h3 class="titulo-de-seccion">
             <% if (catalogoBuscado[1].catalogo == "primavera-verano-2021") { %>
                 Catálogo primavera-verano 2021
             <% } %>
         </h3>
 
-        <div class="articulos-mujer-catalogo">
+        <div class="articulos">
 
             <% for(let i = 0 ; i < catalogoBuscado.length ; i++) { %>
             
                 <article>
                     <a href="/productos/detalle/<%= catalogoBuscado[i].seccion %>/<%= catalogoBuscado[i].id %>">
-                    <img src= "<%= catalogoBuscado[i].imagen %>" alt="">
+                    <img src= "<%= catalogoBuscado[i].colores[0] %>" alt="">
                     <div class="descripcion-general-articulo">
                         <p class="nombre-producto"><strong><%= catalogoBuscado[i].nombre %></strong></p>
                         <p class="precio"><%= catalogoBuscado[i].precio %></p>
@@ -48,12 +48,7 @@
 
         </div>
 
-        <div class="secciones-importantes-main">
-            <div class="seccion-importante"><a href="/novelties"><div>NOVEDADES</div></a></div>
-            <div class="seccion-importante"><a href="/best-sellers"><div>LOS MÁS VENDIDOS</div></a></div>
-            <div class="seccion-importante"><a href="/sales"><div>REBAJAS</div></a></div>
-            <div class="seccion-importante"><a href="/the-most-wanted"><div>LO MÁS BUSCADO</div></a></div>
-        </div>
+        <%- include("../partials/main") %>
 
         <div>&nbsp</div>
 

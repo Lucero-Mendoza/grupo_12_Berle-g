@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Creación de productos</title>
+        <%- include("../partials/head-links") %>
+        <link rel="stylesheet" href="/css/styles-edit.css">
+</head>
+
+<body>
+
+<!-- ------------------------HEADER------------------------ -->
+
+<%- include("../partials/header") %>
+
+<!-- -------------------------MAIN------------------------- -->
+
+    <main>
+
+
+            <div class="row product-detail">
+
+                <% if (seccionURL == "berle-g") { %>
+
+                <div>¿A qué sección deseas agregar el nuevo artículo?</div>
+
+                <div><a href="/administrador/agregar-nuevos-productos/mujer">Mujeres</a></div>
+                <div><a href="/administrador/agregar-nuevos-productos/hombre">Hombres</a></div>
+                <div><a href="/administrador/agregar-nuevos-productos/niña">Niñas</a></div>
+                <div><a href="/administrador/agregar-nuevos-productos/niño">niños</a></div>
+                <div><a href="/administrador/agregar-nuevos-productos/bebe">Bebés</a></div>
+
+                <% } else if (seccionURL == "mujer" || seccionURL == "hombre" || seccionURL == "niña" || seccionURL == "niño" || seccionURL == "bebe") { %>
+
+                <form action="/administrador" method="POST" enctype="multipart/form-data">
+                    
+                <div class="identificador-producto">
+                    <label for="id">Id del producto:</label>
+                    <input type="number" name="id" placeholder="El último Id es = <%= ultimoID %>">
+                    <div>El id se compone de: un número constante relacionado con la sección y un número variable relacionado con la cantidad de productos de la sección. Si:
+                        <ul>
+                            <li>El último id = 19, deberás ingresar: 110</li>
+                            <li>El último id = 230, deberás ingresar: 231</li>
+                        </ul> 
+                    </div>
+                </div>
+
+                <div class="nombre-producto">
+                    <label for="nombre">Nombre del producto:</label>
+                    <input type="text" name="nombre">
+                </div>
+
+                <div class="precio-producto">
+                    <label>Precio del producto:</label>
+                    <input type="text" name="precio" placeholder="Ej: $567.80">
+                </div>
+
+                <div class="descripcion-producto">
+                    <label for="descripcion">Descripción:</label>
+                    <textarea name="descripcion"></textarea>
+                </div>
+ 
+                <div class="colores-producto">
+                    <label for="colores">Colores:</label>
+                    <div class="subir-imagen">
+                        <label><i class="fas fa-upload"></i></label>
+                        <input type="file" name="colores" accept="jpg., png." multiple>
+                    </div>
+                </div>
+
+                <div class="catalogo-producto">
+                    <label for="catalogo">Catálogo:</label>
+                    <select name="catalogo">
+                        <option value="">Selecciona</option>
+                        <option value="primavera-verano-2021">Primavera-verano 2021</option>
+                        <option value="otoño-invierno-2021">Otoño-invierno 2021</option>
+                    </select>
+                </div>
+
+                <div class="descuento-producto">
+                    <label for="descuento">Descuento:</label>
+                    <input type="text" name="descuento" placeholder="Ej: 25%">
+                </div>
+
+                <div class="disponibilidad-producto">
+                    <label for="disponibilidad">Disponibilidad:</label>
+                    <div>
+                    <label><input type="radio" name="disponibilidad" value="Disponible">Disponible</label>
+                    <label><input type="radio" name="disponibilidad" value="No disponible">No disponible</label>
+                    </div>
+                </div>
+
+                <div class="seccion-producto">
+                    <label for="seccion">Sección:</label>
+                    <select name="seccion">
+                        <option value="">Elige</option>
+                        <option value="mujer">Mujeres</option>
+                        <option value="hombre">Hombres</option>
+                        <option value="niña">Niñas</option>
+                        <option value="niño">Niños</option>
+                        <option value="bebe">Bebés</option>
+                    </select> 
+                </div>
+
+                <div class="categoria-producto">
+                    <label for="categoria">Categoría:</label>
+                    <select name="categoria">
+                        <option value="">Elige</option>
+                        <option value="novedades">Novedades</option>
+                        <option value="los-mas-vendidos">Los más vendidos</option>
+                        <option value="lo-mas-buscado">Lo más buscado</option>
+                    </select>
+                </div>
+
+                <div class="tallas-producto">
+
+                    <label for="talla">Tallas:</label>
+                    <div class="tallas">
+
+                        <div>
+                            <div>Tallas para niños</div>
+                            <label><input type="checkbox" name="talla" value="1-2 A">1-2 A</label>
+                            <label><input type="checkbox" name="talla" value="2-4 A">2-4 A</label>
+                            <label><input type="checkbox" name="talla" value="4-6 A">4-6 A</label>
+                            <label><input type="checkbox" name="talla" value="6-8 A">6-8 A</label>
+                            <label><input type="checkbox" name="talla" value="8-10 A">8-10 A</label>
+                        </div>
+
+                        <div>
+                            <div>Tallas para adultos</div>
+                            <label><input type="checkbox" name="talla" value="XCH">XCH</label>
+                            <label><input type="checkbox" name="talla" value="CH">CH</label>
+                            <label><input type="checkbox" name="talla" value="M">M</label>
+                            <label><input type="checkbox" name="talla" value="G">G</label>
+                            <label><input type="checkbox" name="talla" value="XG">XG</label>
+                            <label><input type="checkbox" name="talla" value="XXG">XXG</label>
+                        </div>
+
+                        <div>
+                            <div>Tallas para bebés</div>
+                            <label><input type="checkbox" name="talla" value="RN">RN</label>
+                            <label><input type="checkbox" name="talla" value="3M">3M</label>
+                            <label><input type="checkbox" name="talla" value="6M">6M</label>
+                            <label><input type="checkbox" name="talla" value="12M">12M</label>
+                            <label><input type="checkbox" name="talla" value="18M">18M</label>
+                            <label><input type="checkbox" name="talla" value="24M">24M</label>
+                        </div>
+
+                    </div>
+                
+                <div class="boton-guardar-producto">
+                    <button type="submit">Guardar producto</button>
+                </div>
+
+            </form>
+                <% } %>
+            </div>
+
+    </main>
+
+<!-- ------------------------FOOTER------------------------ -->
+
+<div>&nbsp</div>
+<%- include("../partials/footer") %>
+
+</body>
+
+</html>

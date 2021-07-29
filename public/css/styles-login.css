@@ -14,11 +14,11 @@
 
 /*--------------------MODIFICACIONES A HEADER--------------------*/
 
-nav {
+.barra-de-navegacion {
    background-image: url("https://wi.wallpapertip.com/wsimgs/56-565219_carmine.jpg");
    margin-bottom: 0;
 }
-nav:hover {
+.barra-de-navegacion:hover {
    background-image: url("https://images.alphacoders.com/871/thumb-1920-87123.jpg");
 }
 #fondo-header {
@@ -70,7 +70,6 @@ main {
    justify-content: center;
 }
 main form {
-   background-image: url("/img/img-main/formulario-login.jpg");
    border: solid 1px var(--Color4-index);
    border-radius: 5px;
    box-shadow: 0px 0px 10px var(--Color4-index);

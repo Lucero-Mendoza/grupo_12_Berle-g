@@ -18,31 +18,38 @@
 
 <!-- -------------------------MAIN------------------------- -->
 
-    <main>
+    <main class="contenido-vista-secciones">
 
         <div>&nbsp</div>
 
-        <h3>
-            <% if (listaProductos[1].seccion == "mujer") { %>
+        <h3 class="titulo-de-seccion">
+            
+            <% if (seccionURL == "mujer") { %>
                 Mujeres
-            <% } else if (listaProductos[1].seccion == "hombre") { %>
+            <% } else if (seccionURL == "hombre") { %>
                 Hombres
-            <% } else if (listaProductos[1].seccion == "niña") {  %>
+            <% } else if (seccionURL == "niña") {  %>
                 Niñas
-            <% } else if (listaProductos[1].seccion == "niño") {  %>
+            <% } else if (seccionURL == "niño") {  %>
                 Niños
-            <% } else if (listaProductos[1].seccion == "niño") {  %>
+            <% } else if (seccionURL == "bebe") {  %>
                 Bebés
+            <% } else if (seccionURL == "lo-mas-buscado") {  %>
+                Lo más buscado
+            <% } else if (seccionURL == "los-mas-vendidos") {  %>
+                Los más vendidos
+            <% } else if (seccionURL == "novedades") {  %>
+                Novedades
             <% } %>
         </h3>
 
-        <div class="articulos-mujer-catalogo">
+        <div class="articulos">
 
             <% for(let i = 0 ; i < listaProductos.length ; i++) { %>
             
                 <article>
                     <a href="/productos/detalle/<%= listaProductos[i].seccion %>/<%= listaProductos[i].id %>">
-                    <img src= "<%= listaProductos[i].imagen %>" alt="">
+                    <img src= "<%= listaProductos[i].colores[0] %>" alt="">
                     <div class="descripcion-general-articulo">
                         <p class="nombre-producto"><strong><%= listaProductos[i].nombre %></strong></p>
                         <p class="precio"><%= listaProductos[i].precio %></p>
@@ -56,12 +63,7 @@
 
         </div>
 
-        <div class="secciones-importantes-main">
-            <div class="seccion-importante"><a href="/novelties"><div>NOVEDADES</div></a></div>
-            <div class="seccion-importante"><a href="/best-sellers"><div>LOS MÁS VENDIDOS</div></a></div>
-            <div class="seccion-importante"><a href="/sales"><div>REBAJAS</div></a></div>
-            <div class="seccion-importante"><a href="/the-most-wanted"><div>LO MÁS BUSCADO</div></a></div>
-        </div>
+        <%- include("../partials/main") %>
 
         <div>&nbsp</div>
 

@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Detalles del producto</title>
         <%- include("../partials/head-links") %>
-        <link rel="stylesheet" href="/css/styles-articles.css">
+        <link rel="stylesheet" href="/css/styles-detail.css">
 </head>
 
 <body>
@@ -19,21 +19,21 @@
 
 <!-- -------------------------MAIN------------------------- -->
 
-<main>
+<main class="contenido-vista-detalle">
     <% for(let i = 0 ; i < articuloBuscado.length ; i++) { %>
 
         <div class="apartado-tablet-desktop">
     
-            <h3 class="nombre-producto-celular"><%= articuloBuscado[i].nombre %></h3>
+            <h3 class="titulo-de-seccion-celular"><%= articuloBuscado[i].nombre %></h3>
     
             <div class="imagen-producto">
-                <img class="imagen" src= "<%= articuloBuscado[i].imagen %>" alt="">
+                <img class="imagen" src= "<%= articuloBuscado[i].colores[0] %>" alt="">
             </div>
     
             <div class="apartado-tablet-desktop-sin-img">
                 <div class="nombreTD-botonCG">
     
-                    <h3 class="nombre-producto-tablet-desktop"><%= articuloBuscado[i].nombre %></h3>
+                    <h3 class="titulo-de-seccion-tablet-desktop"><%= articuloBuscado[i].nombre %></h3>
     
                     <form class="formulario-1" action="/" method="">
                         <div class="boton-guardar-producto">
@@ -52,38 +52,33 @@
                 <div>
                     <div class="precio"><%= articuloBuscado[i].precio %></div>
                 </div>
-    
+
                 <div class="otros-colores">
-                    <img class="color-1" src= "<%= articuloBuscado[i].color1 %>" alt="">
-                    <img class="color-2" src= "<%= articuloBuscado[i].color2 %>" alt="">
-                    <img class="color-3" src= "<%= articuloBuscado[i].color3 %>" alt="">
-                    <img class="color-4" src= "<%= articuloBuscado[i].color4 %>" alt="">
+                    <% for(let x = 0 ; x < articuloBuscado[i].colores.length ; x++) { %>
+                    <img class="color-articulo" src= "<%= articuloBuscado[i].colores[x] %>" alt="">
+                    <% } %>
                 </div>
-    
+                    
                 <div class="disponibilidad"><%= articuloBuscado[i].disponibilidad %></div>
     
                 <div class="seleccion-y-guia-tallas">
-                    <form action="/" method="">
-                        <select>
-                            <option>CH</option>
-                            <option>M</option>
-                            <option>G</option>
-                        </select>
-                    </form>
+
+                        <form action="/" method="">
+                            <select>
+                                <% for(let t = 0 ; t < articuloBuscado[i].talla.length ; t++) { %>
+                                <option><%= articuloBuscado[i].talla[t] %></option>
+                                <% } %>
+                            </select>
+                        </form>
     
                     <div><a href="/size-guide">Guía de tallas</a></div>
-                </div>
-    
-                <div class="descripciones-TD">
-                    <p><%= articuloBuscado[i].descripcion %></p>
-                    <p>Otras caracteristicas</p>
                 </div>
     
             </div>
     
         </div>
     
-        <div class="descripciones-C">
+        <div class="descripciones">
             <p><%= articuloBuscado[i].descripcion %></p>
             <p>Otras caracteristicas</p>
         </div>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Edición de productos</title>
+        <%- include("../partials/head-links") %>
+        <link rel="stylesheet" href="/css/styles-edit.css">
+</head>
+
+<body>
+
+<!-- ------------------------HEADER------------------------ -->
+
+<%- include("../partials/header") %>
+
+<!-- -------------------------MAIN------------------------- -->
+
+    <main>
+
+            <h3>¡Hola! Estás editando el producto <%= edicionDeProducto[0].id %> de la seccion <%= edicionDeProducto[0].seccion%></h3>
+
+            <form class="formulario-edicion" action="/administrador/editar-productos-existentes/<%= edicionDeProducto[0].id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+
+                <div class="nombre-producto">
+                    <label for="nombre">Nombre del producto:</label>
+                    <input type="text" name="nombre" placeholder="<%= edicionDeProducto[0].nombre %>">
+                </div>
+
+                <div class="precio-producto">
+                    <label>Precio del producto:</label>
+                    <input type="text" name="precio" placeholder="<%= edicionDeProducto[0].precio %>">
+                </div>
+
+                <div class="descripcion-producto">
+                    <label for="descripcion">Descripción:</label>
+                    <textarea name="descripcion"><%= edicionDeProducto[0].descripcion%></textarea>
+                </div>
+ 
+                <div class="colores-producto">
+
+                    <label for="coloresExistentes">Colores existentes:<div>(elige los que deseas conservar)</div></label>
+                    <div class="colores-existentes">
+                        <% for(let x = 0 ; x < edicionDeProducto[0].colores.length ; x++) { %>
+                        <label><input type="checkbox" name="coloresExistentes" value="<%= edicionDeProducto[0].colores[x] %>"><img src="<%= edicionDeProducto[0].colores[x] %>" alt=""></label>
+                        <% } %>
+                    </div>
+
+                    <label for="coloresNuevos">Colores nuevos:<div>(si es que existen, agrega los colores nuevos)</div></label>
+                    <div class="subir-imagen">
+                        <label><i class="fas fa-upload"></i></label>
+                        <input type="file" name="coloresNuevos" accept="jpg., png." multiple>
+                    </div>
+
+                </div>
+
+                <div class="catalogo-producto">
+                    <label for="catalogo">Catálogo:</label>
+                    <select name="catalogo">
+                        <option value="">Selecciona</option>
+                        <option value="primavera-verano-2021">Primavera-verano 2021</option>
+                        <option value="otoño-invierno-2021">Otoño-invierno 2021</option>
+                    </select>
+                </div>
+
+                <div class="descuento-producto">
+                    <label for="descuento">Descuento:</label>
+                    <input type="text" name="descuento" placeholder="<%= edicionDeProducto[0].descuento%>">
+                </div>
+
+                <div class="disponibilidad-producto">
+                    <label for="disponibilidad">Disponibilidad:</label>
+                    <div>
+                    <label><input type="radio" name="disponibilidad" value="Disponible">Disponible</label>
+                    <label><input type="radio" name="disponibilidad" value="No disponible">No disponible</label>
+                    </div>
+                </div>
+
+                <div class="seccion-producto">
+                    <label for="seccion">Sección:</label>
+                    <select name="seccion">
+                        <option value="">Elige</option>
+                        <option value="mujer">Mujeres</option>
+                        <option value="hombre">Hombres</option>
+                        <option value="niña">Niñas</option>
+                        <option value="niño">Niños</option>
+                        <option value="bebe">Bebés</option>
+                    </select> 
+                </div>
+
+                <div class="categoria-producto">
+                    <label for="categoria">Categoría:</label>
+                    <select name="categoria">
+                        <option value="">Elige</option>
+                        <option value="novedades">Novedades</option>
+                        <option value="los-mas-vendidos">Los más vendidos</option>
+                        <option value="lo-mas-buscado">Lo más buscado</option>
+                    </select>
+                </div>
+                
+                <div class="tallas-producto">
+
+                    <label for="tallasExistentes">Tallas existentes:<div>(elige los que deseas conservar)</div></label>
+                    <div class="tallas-existentes">
+                        <% for(let x = 0 ; x < edicionDeProducto[0].talla.length ; x++) { %>
+                        <label><input type="checkbox" name="tallasExistentes" value="<%= edicionDeProducto[0].talla[x] %>"><%= edicionDeProducto[0].talla[x] %></label>
+                        <% } %>
+                    </div>
+
+                    <label for="tallasNuevas">Tallas nuevas:<div>(elige las que deseas agregar según la sección)</div></label>
+                    <div class="tallas-nuevas">
+
+                        <div>
+                            <div>Tallas para niños</div>
+                            <label><input type="checkbox" name="tallasNuevas" value="1-2 A">1-2 A</label>
+                            <label><input type="checkbox" name="tallasNuevas" value="2-4 A">2-4 A</label>
+                            <label><input type="checkbox" name="tallasNuevas" value="4-6 A">4-6 A</label>
+                            <label><input type="checkbox" name="tallasNuevas" value="6-8 A">6-8 A</label>
+                            <label><input type="checkbox" name="tallasNuevas" value="8-10 A">8-10 A</label>
+                        </div>
+
+                        <div>
+                            <div>Tallas para adultos</div>
+                            <label><input type="checkbox" name="tallasNuevas" value="XCH">XCH</label>
+                            <label><input type="checkbox" name="tallasNuevas" value="CH">CH</label>
+                            <label><input type="checkbox" name="tallasNuevas" value="M">M</label>
+                            <label><input type="checkbox" name="tallasNuevas" value="G">G</label>
+                            <label><input type="checkbox" name="tallasNuevas" value="XG">XG</label>
+                            <label><input type="checkbox" name="tallasNuevas" value="XXG">XXG</label>
+                        </div>
+
+                        <div>
+                            <div>Tallas para bebes</div>
+                            <label><input type="checkbox" name="tallasNuevas" value="RN">RN</label>
+                            <label><input type="checkbox" name="tallasNuevas" value="3M">3M</label>
+                            <label><input type="checkbox" name="tallasNuevas" value="6M">6M</label>
+                            <label><input type="checkbox" name="tallasNuevas" value="12M">12M</label>
+                            <label><input type="checkbox" name="tallasNuevas" value="18M">18M</label>
+                            <label><input type="checkbox" name="tallasNuevas" value="24M">24M</label>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="boton-guardar-producto">
+                    <button type="submit">Guardar producto</button>
+                </div>
+
+            </form>
+
+    </main>
+
+<!-- ------------------------FOOTER------------------------ -->
+
+<div>&nbsp</div>
+<%- include("../partials/footer") %>
+
+</body>
+
+</html>

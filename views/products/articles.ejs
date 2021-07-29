@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos Berle G</title>
+    <%- include("../partials/head-links") %>
+    <link rel="stylesheet" href="/css/styles-sections.css">
+</head>
+
+<body>
+
+<!-- ------------------------HEADER------------------------ -->
+
+<%- include("../partials/header") %>
+
+<!-- -------------------------MAIN------------------------- -->
+
+    <main class="contenido-vista-articulos">
+
+        <div>&nbsp</div>
+
+        <h3 class="titulo-de-seccion">
+           ¡CONÓCE TODOS NUESTROS PRODUCTOS!
+        </h3>
+
+        <div class="articulos">
+
+            <% for(let i = 0 ; i < todosLosProductos.length ; i++) { %>
+            
+                <article>
+                    <a href="/productos/detalle/<%= todosLosProductos[i].seccion %>/<%= todosLosProductos[i].id %>">
+                    <img src= "<%= todosLosProductos[i].colores[0] %>" alt="">
+                    <div class="descripcion-general-articulo">
+                        <p class="nombre-producto"><strong><%= todosLosProductos[i].nombre %></strong></p>
+                        <p class="precio"><%= todosLosProductos[i].precio %></p>
+                        <p class="descuento"><%= todosLosProductos[i].descuento %></p>
+                        <div class="fa-truck-article"><i class="fas fa-truck"></i></div>
+                    </div>
+                    </a>
+                </article>
+                
+            <% } %>
+
+        </div>
+
+        <%- include("../partials/main") %>
+
+        <div>&nbsp</div>
+
+    </main>
+
+<!-- ------------------------FOOTER------------------------ -->
+
+<%- include("../partials/footer") %>
+
+</body>
+</html>

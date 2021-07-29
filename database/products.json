@@ -1,0 +1,572 @@
+[
+  {
+    "id": 11,
+    "nombre": "Blusa corta con estampado floral",
+    "precio": "$355.00",
+    "descripcion": "Sudadera suave de manga larga con gorro forrado en punto y cordón de ajuste. Modelo con bolsillo tipo canguro y borde acanalado en los puños y bastilla. Interior cepillado suave.",
+    "colores": [
+      "/img/productos/blusa-floral.jpg"
+    ],
+    "catalogo": "primavera-verano-2021",
+    "descuento": "-20%",
+    "disponibilidad": "No disponible",
+    "seccion": "mujer",
+    "categoria": "los-mas-vendidos",
+    "talla": [
+      "XCH",
+      "CH",
+      "M",
+      "G"
+    ]
+  },
+  {
+    "id": 12,
+    "nombre": "Blusa corta con nudo delantero",
+    "precio": "$499.00",
+    "descripcion": "Sudadera suave de manga larga con gorro forrado en punto y cordón de ajuste. Modelo con bolsillo tipo canguro y borde acanalado en los puños y bastilla. Interior cepillado suave.",
+    "colores": [
+      "/img/productos/blusa-nudo-roja.jpg",
+      "/img/productos/blusa-nudo-negra.jpg",
+      "/img/productos/blusa-nudo-cafe.jpg"
+    ],
+    "catalogo": "primavera-verano-2021",
+    "descuento": "-10%",
+    "disponibilidad": "Disponible",
+    "seccion": "mujer",
+    "categoria": "lo-mas-buscado",
+    "talla": [
+      "XCH",
+      "CH",
+      "M",
+      "G"
+    ]
+  },
+  {
+    "id": 13,
+    "nombre": "Camiseta color block tee",
+    "precio": "$339.00",
+    "descripcion": "Sudadera suave de manga larga con gorro forrado en punto y cordón de ajuste. Modelo con bolsillo tipo canguro y borde acanalado en los puños y bastilla. Interior cepillado suave.",
+    "colores": [
+      "/img/productos/camiseta-colorblock.jpg"
+    ],
+    "catalogo": "primavera-verano-2021",
+    "descuento": "-60%",
+    "disponibilidad": "No disponible",
+    "seccion": "mujer",
+    "categoria": "novedades",
+    "talla": [
+      "XCH",
+      "CH",
+      "M",
+      "G"
+    ]
+  },
+  {
+    "id": 14,
+    "nombre": "Camiseta de tirantes con ojales",
+    "precio": "$250.00",
+    "descripcion": "Sudadera suave de manga larga con gorro forrado en punto y cordón de ajuste. Modelo con bolsillo tipo canguro y borde acanalado en los puños y bastilla. Interior cepillado suave.",
+    "colores": [
+      "/img/productos/camiseta-tirantes.jpg"
+    ],
+    "catalogo": "primavera-verano-2021",
+    "descuento": "-50%",
+    "disponibilidad": "Disponible",
+    "seccion": "mujer",
+    "categoria": "novedades",
+    "talla": [
+      "XCH",
+      "CH",
+      "M",
+      "G"
+    ]
+  },
+  {
+    "id": 21,
+    "nombre": "Camiseta con estampado de manos",
+    "precio": "$359.00",
+    "descripcion": "Sudadera suave de manga larga con gorro forrado en punto y cordón de ajuste. Modelo con bolsillo tipo canguro y borde acanalado en los puños y bastilla. Interior cepillado suave.",
+    "colores": [
+      "/img/productos/camiseta-beige-manos.jpg",
+      "/img/productos/camiseta-azul-manos.jpg",
+      "/img/productos/camiseta-rosa-manos.jpg",
+      "/img/productos/camiseta-blanca-manos.jpg"
+    ],
+    "catalogo": "primavera-verano-2021",
+    "descuento": "-60%",
+    "disponibilidad": "No disponible",
+    "seccion": "hombre",
+    "categoria": "novedades",
+    "talla": [
+      "CH",
+      "M",
+      "G",
+      "XG"
+    ]
+  },
+  {
+    "id": 22,
+    "nombre": "Camiseta color block tee",
+    "precio": "$499.00",
+    "descripcion": "Sudadera suave de manga larga con gorro forrado en punto y cordón de ajuste. Modelo con bolsillo tipo canguro y borde acanalado en los puños y bastilla. Interior cepillado suave.",
+    "colores": [
+      "/img/productos/camiseta-colorblock-guinda.jpg",
+      "/img/productos/camiseta-colorblock-morada.jpg",
+      "/img/productos/camiseta-colorblock-azul-turquesa.jpg"
+    ],
+    "catalogo": "primavera-verano-2021",
+    "descuento": "-10%",
+    "disponibilidad": "Disponible",
+    "seccion": "hombre",
+    "categoria": "lo-mas-buscado",
+    "talla": [
+      "CH",
+      "M",
+      "G",
+      "XG"
+    ]
+  },
+  {
+    "id": 23,
+    "nombre": "Camiseta con estampado de rayas",
+    "precio": "$339.00",
+    "descripcion": "Sudadera suave de manga larga con gorro forrado en punto y cordón de ajuste. Modelo con bolsillo tipo canguro y borde acanalado en los puños y bastilla. Interior cepillado suave.",
+    "colores": [
+      "/img/productos/camiseta-rayas.jpg",
+      "/img/productos/camiseta-rayas-azul-turquesa.jpg",
+      "/img/productos/camiseta-rayas-azul-rey.jpg"
+    ],
+    "catalogo": "primavera-verano-2021",
+    "descuento": "-60%",
+    "disponibilidad": "Disponible",
+    "seccion": "hombre",
+    "categoria": "novedades",
+    "talla": [
+      "CH",
+      "M",
+      "G",
+      "XG",
+      "XXG"
+    ]
+  },
+  {
+    "id": 24,
+    "nombre": "Camiseta color pink",
+    "precio": "$250.00",
+    "descripcion": "Sudadera suave de manga larga con gorro forrado en punto y cordón de ajuste. Modelo con bolsillo tipo canguro y borde acanalado en los puños y bastilla. Interior cepillado suave.",
+    "colores": [
+      "/img/productos/camiseta-rosa.jpg"
+    ],
+    "catalogo": "primavera-verano-2021",
+    "descuento": "-50%",
+    "disponibilidad": "Disponible",
+    "seccion": "hombre",
+    "categoria": "novedades",
+    "talla": [
+      "CH",
+      "M",
+      "G",
+      "XG"
+    ]
+  },
+  {
+    "id": 31,
+    "nombre": "Camiseta rosa love",
+    "precio": "$224.00",
+    "descripcion": "Sudadera suave de manga larga con gorro forrado en punto y cordón de ajuste. Modelo con bolsillo tipo canguro y borde acanalado en los puños y bastilla. Interior cepillado suave.",
+    "colores": [
+      "/img/productos/blusa-rosa.jpg"
+    ],
+    "catalogo": "primavera-verano-2021",
+    "descuento": "-30%",
+    "disponibilidad": "Disponible",
+    "seccion": "niña",
+    "categoria": "los-mas-vendidos",
+    "talla": [
+      "1-2 A",
+      "2-4 A",
+      "4-6 A",
+      "6-8 A",
+      "8-10 A"
+    ]
+  },
+  {
+    "id": 32,
+    "nombre": "Chamarra mezclilla clara",
+    "precio": "$1452.00",
+    "descripcion": "Sudadera suave de manga larga con gorro forrado en punto y cordón de ajuste. Modelo con bolsillo tipo canguro y borde acanalado en los puños y bastilla. Interior cepillado suave.",
+    "colores": [
+      "/img/productos/chamarra-mezclilla.jpg"
+    ],
+    "catalogo": "primavera-verano-2021",
+    "descuento": "-10%",
+    "disponibilidad": "Disponible",
+    "seccion": "niña",
+    "categoria": "novedades",
+    "talla": [
+      "1-2 A",
+      "2-4 A",
+      "4-6 A",
+      "6-8 A",
+      "8-10 A"
+    ]
+  },
+  {
+    "id": 33,
+    "nombre": "Vestido balet",
+    "precio": "$1200.00",
+    "descripcion": "Sudadera suave de manga larga con gorro forrado en punto y cordón de ajuste. Modelo con bolsillo tipo canguro y borde acanalado en los puños y bastilla. Interior cepillado suave.",
+    "colores": [
+      "/img/productos/vestido-rosa.jpg",
+      "/img/productos/vestido-amarillo.jpg"
+    ],
+    "catalogo": "primavera-verano-2021",
+    "descuento": "-20%",
+    "disponibilidad": "Disponible",
+    "seccion": "niña",
+    "categoria": "lo-mas-buscado",
+    "talla": [
+      "1-2 A",
+      "2-4 A",
+      "4-6 A",
+      "6-8 A",
+      "8-10 A"
+    ]
+  },
+  {
+    "id": 34,
+    "nombre": "Vestido de flores",
+    "precio": "$200.00",
+    "descripcion": "Sudadera suave de manga larga con gorro forrado en punto y cordón de ajuste. Modelo con bolsillo tipo canguro y borde acanalado en los puños y bastilla. Interior cepillado suave.",
+    "colores": [
+      "/img/productos/vestido-azul-flores.jpg",
+      "/img/productos/vestido-multicolor-flores.jpg",
+      "/img/productos/vestido-rojo-marsala-claro-flores.jpg"
+    ],
+    "catalogo": "primavera-verano-2021",
+    "descuento": "-5%",
+    "disponibilidad": "Disponible",
+    "seccion": "niña",
+    "categoria": "los-mas-vendidos",
+    "talla": [
+      "1-2 A",
+      "2-4 A",
+      "4-6 A",
+      "6-8 A",
+      "8-10 A"
+    ]
+  },
+  {
+    "id": 41,
+    "nombre": "Chaleco acolchonado",
+    "precio": "$902.00",
+    "descripcion": "Sudadera suave de manga larga con gorro forrado en punto y cordón de ajuste. Modelo con bolsillo tipo canguro y borde acanalado en los puños y bastilla. Interior cepillado suave.",
+    "colores": [
+      "/img/productos/chaleco-acolchonado-azul-dos-tonos.jpg",
+      "/img/productos/chaleco-acolchonado-azul-mostaza.jpg",
+      "/img/productos/chaleco-acolchonado-negro-blanco.jpg"
+    ],
+    "catalogo": "primavera-verano-2021",
+    "descuento": "-10%",
+    "disponibilidad": "No disponible",
+    "seccion": "niño",
+    "categoria": "novedades",
+    "talla": [
+      "1-2 A",
+      "2-4 A",
+      "4-6 A",
+      "6-8 A",
+      "8-10 A"
+    ]
+  },
+  {
+    "id": 42,
+    "nombre": "Chamarra biker",
+    "precio": "$499.00",
+    "descripcion": "Sudadera suave de manga larga con gorro forrado en punto y cordón de ajuste. Modelo con bolsillo tipo canguro y borde acanalado en los puños y bastilla. Interior cepillado suave.",
+    "colores": [
+      "/img/productos/chamarra-biker.jpg"
+    ],
+    "catalogo": "primavera-verano-2021",
+    "descuento": "-10%",
+    "disponibilidad": "No disponible",
+    "seccion": "niño",
+    "categoria": "los-mas-vendidos",
+    "talla": [
+      "1-2 A",
+      "2-4 A",
+      "4-6 A",
+      "6-8 A",
+      "8-10 A"
+    ]
+  },
+  {
+    "id": 43,
+    "nombre": "Pantalón super soft",
+    "precio": "$339.00",
+    "descripcion": "Sudadera suave de manga larga con gorro forrado en punto y cordón de ajuste. Modelo con bolsillo tipo canguro y borde acanalado en los puños y bastilla. Interior cepillado suave.",
+    "colores": [
+      "/img/productos/pantalon-super-soft-azul.jpg",
+      "/img/productos/pantalon-super-soft-gris.jpg"
+    ],
+    "catalogo": "primavera-verano-2021",
+    "descuento": "-60%",
+    "disponibilidad": "Disponible",
+    "seccion": "niño",
+    "categoria": "novedades",
+    "talla": [
+      "1-2 A",
+      "2-4 A",
+      "4-6 A",
+      "6-8 A",
+      "8-10 A"
+    ]
+  },
+  {
+    "id": 44,
+    "nombre": "Playera polo piqué",
+    "precio": "$535.00",
+    "descripcion": "Sudadera suave de manga larga con gorro forrado en punto y cordón de ajuste. Modelo con bolsillo tipo canguro y borde acanalado en los puños y bastilla. Interior cepillado suave.",
+    "colores": [
+      "/img/productos/playera-polo-pique-amarillo-azul.jpg",
+      "/img/productos/playera-polo-pique-azul-cafe.jpg"
+    ],
+    "catalogo": "primavera-verano-2021",
+    "descuento": "-10%",
+    "disponibilidad": "Disponible",
+    "seccion": "niño",
+    "categoria": "lo-mas-buscado",
+    "talla": [
+      "1-2 A",
+      "2-4 A",
+      "4-6 A",
+      "6-8 A",
+      "8-10 A"
+    ]
+  },
+  {
+    "id": 45,
+    "nombre": "Sudadera Pokemón",
+    "precio": "$250.00",
+    "descripcion": "Sudadera suave de manga larga con gorro forrado en punto y cordón de ajuste. Modelo con bolsillo tipo canguro y borde acanalado en los puños y bastilla. Interior cepillado suave.",
+    "colores": [
+      "/img/productos/sudadera-pokemon.jpg"
+    ],
+    "catalogo": "primavera-verano-2021",
+    "descuento": "-50%",
+    "disponibilidad": "Disponible",
+    "seccion": "niño",
+    "categoria": "novedades",
+    "talla": [
+      "1-2 A",
+      "2-4 A",
+      "4-6 A",
+      "6-8 A",
+      "8-10 A"
+    ]
+  },
+  {
+    "id": 46,
+    "nombre": "Sudadera Space Jam",
+    "precio": "$499.00",
+    "descripcion": "Sudadera suave de manga larga con gorro forrado en punto y cordón de ajuste. Modelo con bolsillo tipo canguro y borde acanalado en los puños y bastilla. Interior cepillado suave.",
+    "colores": [
+      "/img/productos/sudadera-space-jam.jpg"
+    ],
+    "catalogo": "primavera-verano-2021",
+    "descuento": "-50%",
+    "disponibilidad": "No disponible",
+    "seccion": "niño",
+    "categoria": "novedades",
+    "talla": [
+      "1-2 A",
+      "2-4 A",
+      "4-6 A",
+      "6-8 A",
+      "8-10 A"
+    ]
+  },
+  {
+    "id": 51,
+    "nombre": "Conjunto de algodón niña",
+    "precio": "$359.00",
+    "descripcion": "Sudadera suave de manga larga con gorro forrado en punto y cordón de ajuste. Modelo con bolsillo tipo canguro y borde acanalado en los puños y bastilla. Interior cepillado suave.",
+    "colores": [
+      "/img/productos/conjunto-algodon-azul-lion.jpg",
+      "/img/productos/conjunto-algodon-beige-carita.jpg",
+      "/img/productos/conjunto-algodon-blanco-love.jpg",
+      "/img/productos/conjunto-algodon-rosa-love.jpg",
+      "/img/productos/conjunto-algodon-rosa-puntos.jpg"
+    ],
+    "catalogo": "primavera-verano-2021",
+    "descuento": "-60%",
+    "disponibilidad": "No disponible",
+    "seccion": "bebe",
+    "categoria": "los-mas-vendidos",
+    "talla": [
+      "RN",
+      "3M",
+      "6M",
+      "12M",
+      "18M",
+      "24M"
+    ]
+  },
+  {
+    "id": 52,
+    "nombre": "Set de 3 piezas Winnie Pooh",
+    "precio": "$499.00",
+    "descripcion": "Sudadera suave de manga larga con gorro forrado en punto y cordón de ajuste. Modelo con bolsillo tipo canguro y borde acanalado en los puños y bastilla. Interior cepillado suave.",
+    "colores": [
+      "/img/productos/set-tres-winnie-pooh.jpg"
+    ],
+    "catalogo": "primavera-verano-2021",
+    "descuento": "-10%",
+    "disponibilidad": "No disponible",
+    "seccion": "bebe",
+    "categoria": "novedades",
+    "talla": [
+      "RN",
+      "3M",
+      "6M",
+      "12M",
+      "18M",
+      "24M"
+    ]
+  },
+  {
+    "id": 53,
+    "nombre": "Set de 3 piezas Batman",
+    "precio": "$339.00",
+    "descripcion": "Sudadera suave de manga larga con gorro forrado en punto y cordón de ajuste. Modelo con bolsillo tipo canguro y borde acanalado en los puños y bastilla. Interior cepillado suave.",
+    "colores": [
+      "/img/productos/set-tres-batman.jpg"
+    ],
+    "catalogo": "primavera-verano-2021",
+    "descuento": "-60%",
+    "disponibilidad": "Disponible",
+    "seccion": "bebe",
+    "categoria": "lo-mas-buscado",
+    "talla": [
+      "RN",
+      "3M",
+      "6M",
+      "12M",
+      "18M",
+      "24M"
+    ]
+  },
+  {
+    "id": "35",
+    "nombre": "Falda de tul con brillos",
+    "precio": "$485.00",
+    "descripcion": "Falda voluminosa en doble capa de tul con diseño brilloso en la capa superior y pretina elástica con brillos. Forrada.",
+    "colores": [
+      "/img/productos/falda-arcoiris.jpg",
+      "/img/productos/falda-beige-con-brillos.jpg"
+    ],
+    "catalogo": "otoño-invierno-2021",
+    "descuento": "30%",
+    "disponibilidad": "Disponible",
+    "seccion": "niña",
+    "categoria": "los-mas-vendidos",
+    "talla": [
+      "1-2 A",
+      "2-4 A",
+      "4-6 A",
+      "6-8 A",
+      "8-10 A"
+    ]
+  },
+  {
+    "id": "36",
+    "nombre": "Suéter en tejido de chenilla",
+    "precio": "$485.00",
+    "descripcion": "Suéter de cuello redondo en tejido holgado de chenilla con acabado aterciopelado suave. Modelo con hombros caídos, y borde acanalado alrededor del cuello, puños y bastilla.",
+    "colores": [
+      "/img/productos/1626892291844-sueter-tejido-chenilla-rojo.jpg",
+      "/img/productos/1626892291848-sueter-tejido-chenilla-rojo-oscuro.jpg",
+      "/img/productos/1626892291853-sueter-tejido-chenilla-verde.jpg",
+      "/img/productos/1626892291879-sueter-tejido-chenilla-verde-menta.jpg"
+    ],
+    "catalogo": "otoño-invierno-2021",
+    "descuento": "10%",
+    "disponibilidad": "Disponible",
+    "seccion": "niña",
+    "categoria": "lo-mas-buscado",
+    "talla": [
+      "1-2 A",
+      "2-4 A",
+      "4-6 A",
+      "6-8 A",
+      "8-10 A"
+    ]
+  },
+  {
+    "id": "25",
+    "nombre": "Sudadera con gorro",
+    "precio": "$885.00",
+    "descripcion": "Sudadera de corte holgado en mezcla de algodón. Gorro forrado con cordón de ajuste, un bolsillo tipo canguro, y borde acanalado alrededor de puños y bastilla. Interior cepillado suave.",
+    "colores": [
+      "/img/productos/1626911922510-sudadera-con-gorro-gris-oscuro.jpg",
+      "/img/productos/1626911922533-sudadera-con-gorro-verde-neón.jpg",
+      "/img/productos/1626911922534-sudadera-con-gorro-lila.jpg",
+      "/img/productos/1626911922535-sudadera-con-gorro-greige.jpg",
+      "/img/productos/1626919305885-sudadera-con-gorro-blanca.jpg"
+    ],
+    "catalogo": "otoño-invierno-2021",
+    "descuento": "10%",
+    "disponibilidad": "Disponible",
+    "seccion": "hombre",
+    "categoria": "lo-mas-buscado",
+    "talla": [
+      "CH",
+      "M",
+      "G",
+      "XG"
+    ]
+  },
+  {
+    "id": "26",
+    "nombre": "Camisa Oxford",
+    "precio": "$355.00",
+    "descripcion": "Camisa de manga corta en algodón Oxford. Modelo de cuello americano, frente clásico, canesú con pliegue en la espalda, un bolsillo superior abierto y bastilla redondeada. Regular Fit – corte clásico con cintura ligeramente ajustada para mayor libertad de movimiento y una silueta elegante y cómoda.",
+    "colores": [
+      "/img/productos/1627262588788-camisa-oxford-negra.jpg",
+      "/img/productos/1627262588800-camisa-oxford-beige.jpg"
+    ],
+    "catalogo": "primavera-verano-2021",
+    "descuento": "0%",
+    "disponibilidad": "Disponible",
+    "seccion": "hombre",
+    "categoria": "novedades",
+    "talla": [
+      "CH",
+      "M",
+      "G",
+      "XG"
+    ]
+  },
+  {
+    "id": "54",
+    "nombre": "Chamarra en lana sintética",
+    "precio": "$355.00",
+    "descripcion": "Chamarra en lana sintética suave con bordes elásticos a tono. Gorro con orejas y zíper oculto al frente con protección para la barbilla. Sin forro.",
+    "colores": [
+      "/img/productos/1627535661248-chamarra-beige.jpg",
+      "/img/productos/1627535661253-chamarra-azul-marino.jpg",
+      "/img/productos/1627535808399-chamarra-verde-caqui-oscuro.jpg"
+    ],
+    "catalogo": "otoño-invierno-2021",
+    "descuento": "-20%",
+    "disponibilidad": "Disponible",
+    "seccion": "bebe",
+    "categoria": "lo-mas-buscado",
+    "talla": [
+      "RN",
+      "3M",
+      "24M",
+      "12M"
+    ]
+  }
+]

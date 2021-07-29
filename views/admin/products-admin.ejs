@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Productos Berle G</title>
+        <%- include("../partials/head-links") %>
+        <link rel="stylesheet" href="/css/styles-edit.css">
+</head>
+
+<body>
+
+<!-- ------------------------HEADER------------------------ -->
+
+<%- include("../partials/header") %>
+
+<!-- -------------------------MAIN------------------------- -->
+
+    <main>
+
+            <div class="row product-detail">
+
+                <h3>¡Actualiza nuestra lista de productos!</h3>
+
+                <div class="productos-a-modificar">
+
+                <% for (let i = 0 ; i < todosLosProductos.length ; i++) { %>
+
+                <div class="producto-a-modificar">
+
+                    <div class="imagen-producto-a-modificar">
+                        <img src="<%= todosLosProductos[i].colores[0]%>" alt="">
+                    </div>
+
+                    <div class="opciones-de-modificacion">
+
+                        <div class="enlace-para-editar">
+                            <a href="/administrador/editar-productos-existentes/<%= todosLosProductos[i].id%>">EDITAR</a>
+                        </div>
+        
+                        <div class="boton-para-eliminar">
+                            <form  class="formulario-eliminar" action="/administrador/eliminar-productos-existentes/<%= todosLosProductos[i].id %>?_method=DELETE" method="POST" style="display: inline-flex">
+                                <button type="submit">ELIMINAR</button>
+                            </form>
+                        </div>
+                        
+                        <div>Producto con id: <%= todosLosProductos[i].id%></div>
+
+                    </div>
+
+                </div>
+
+                <% } %>
+                </div>
+
+    </main>
+
+<!-- ------------------------FOOTER------------------------ -->
+
+<div>&nbsp</div>
+<%- include("../partials/footer") %>
+
+</body>
+
+</html>
